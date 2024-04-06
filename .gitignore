@@ -4,6 +4,7 @@
 *.rtc
 *.sn*
 *.dat
+*.O
 
 # rgbds extras
 *.sym
