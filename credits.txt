@@ -1,0 +1,156 @@
+DevEd for making CryEd.
+Pret and everyone who contributed to pokecrystal, as CryEds audio engine was taken from pokecrystal.
+Dotsarecool for making the Gen 1 cry editor that also works on gen 2 due to the shared engine.
+Chaos_Lord2 for orgainising the library and improving Combusken' cry.
+
+Ax6 for making the linux makefile and the following cries.
+Lopunny
+Skuntank
+Toxicroak
+Dusknoir
+Froslass
+Simisage
+Bronzor
+Bronzong
+Tynamo
+Eelectrik
+Eelektross
+Floatzel
+Croagunk
+Buneary (including base cry)
+Buizel
+Roserade
+Lampent
+Chandelure
+Litwick
+Amaura (including base cry)
+Cutiefly
+Ribombee
+Pansage
+Burmy
+Mothim
+Stunky
+Darkrai
+Luxio
+Luxray
+Budew
+Bonsly
+Chatot (including base cry)
+Empoleon
+Prinplup
+Drillbur
+Excadrill
+Sandile
+Krokrok
+Krookadile
+Ducklett
+Swanna
+Crabrawler (including base cry)
+Crabomnible
+Aurorus
+Sligoo
+Goodra
+Clauncher
+Clawitzer
+Heliolisk (including base cry)
+Helioptile
+
+SourApple for making the following cries:
+Blaziken
+Marshtomp
+Ludicolo
+Pelipper
+Surskit
+Masquerain
+Whismur
+Loudred
+Exploud
+Makuhita
+Hariyama
+Azurill
+Skitty
+Delcatty
+Sableye
+Lotad
+Wingull
+Ralts
+Electrike
+Manectric
+Roselia
+Wailmer
+Wailord
+Trapinch
+Vibrava
+Flygon
+Altaria
+Lileep
+Cradilly
+Feebas
+Milotic
+Duskull
+Dusclops
+Absol
+Snorunt
+Porygon-Z
+Spheal
+Sealeo
+Walrein
+Bagon
+Shelgon
+Salamence
+Beldum
+Metang
+Latios
+Kyogre
+Groudon
+Treecko
+Grovyle
+Sceptile
+Turtwig
+Grotle
+Torterra
+Chimchar
+Monferno
+Infernape
+
+FrostedGeulleisia for making the following cries:
+Swablu
+Glaceon
+
+Celadonk for making the following cries:
+Torchic
+Mudkip
+Swampert
+Poochyena
+Zigzagoon
+Linoone
+Lombre
+
+Monstarules for making the following cries:
+Tailow
+Swellow
+Bidoof
+Bibarel
+Combusken
+Mightyena
+Kirlia
+Gardevoir
+Aron
+Larion
+Aggron
+
+MyRattata for making the following cries
+Gastrodon, including discovering the out of bounds base cry
+Metagross
+Goomy, (including base cry)
+
+walshyb for making the following cries
+Piplup
+Shellos
+Shinx
+
+Polisheddevs for making the following cries
+Leafeon
+Sylveon
+
+TPPDevs for Phancero's cry.
