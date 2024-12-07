@@ -1,5 +1,4 @@
 Music_MtMoonSquare:
-; move header to header file to port to RBY
 	channel_count 2
 	channel 1, Music_MtMoonSquare_Ch1
 	channel 2, Music_MtMoonSquare_Ch2

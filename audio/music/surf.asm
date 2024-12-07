@@ -1,5 +1,4 @@
 Music_Surf:
-; move header to header file to port to RBY
 	channel_count 3
 	channel 1, Music_Surf_Ch1
 	channel 2, Music_Surf_Ch2

@@ -1,26 +1,22 @@
 Music_MeetRival::
-; move header to header file to port to RBY
 	channel_count 3
 	channel 1, Music_MeetRival_Ch1
 	channel 2, Music_MeetRival_Ch2
 	channel 3, Music_MeetRival_Ch3
 
 Music_MeetRival_AlternateStart::
-; move header to header file to port to RBY
 	channel_count 3
 	channel 1, Music_MeetRival_Ch1_AlternateStart
 	channel 2, Music_MeetRival_Ch2_AlternateStart
 	channel 3, Music_MeetRival_Ch3_AlternateStart
 
 Music_MeetRival_AlternateTempo::
-; move header to header file to port to RBY
 	channel_count 3
 	channel 1, Music_MeetRival_Ch1_AlternateTempo
 	channel 2, Music_MeetRival_Ch2
 	channel 3, Music_MeetRival_Ch3
 
 Music_MeetRival_AlternateStartAndTempo::
-; move header to header file to port to RBY
 	channel_count 3
 	channel 1, Music_MeetRival_Ch1_AlternateStartAndTempo
 	channel 2, Music_MeetRival_Ch2_AlternateStart

@@ -1,5 +1,4 @@
 Music_DefeatedGymLeader::
-; move header to header file to port to RBY
 	channel_count 3
 	channel 1, Music_DefeatedGymLeader_Ch1
 	channel 2, Music_DefeatedGymLeader_Ch2

@@ -1,5 +1,4 @@
 Music_FireFlower:
-; move header to header file to port to RBY
 	channel_count 4
 	channel 1, Music_FireFlower_Ch1
 	channel 2, Music_FireFlower_Ch2
@@ -7,7 +6,6 @@ Music_FireFlower:
 	channel 4, Music_FireFlower_Ch4
 
 Music_FireFlowerMenu:
-; move header to header file to port to RBY
 	channel_count 4
 	channel 1, Music_FireFlowerMenu_Ch1
 	channel 2, Music_FireFlowerMenu_Ch2

@@ -1,5 +1,4 @@
 Music_RocketSignal:
-; move header to header file to port to RBY
 	channel_count 3
 	channel 1, Music_RocketSignal_Ch1
 	channel 2, Music_RocketSignal_Ch2

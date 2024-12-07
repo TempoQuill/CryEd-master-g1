@@ -1,12 +1,10 @@
 Music_DefeatedWildMon::
-; move header to header file to port to RBY
 	channel_count 3
 	channel 1, Music_DefeatedWildMon_Ch1
 	channel 2, Music_DefeatedWildMon_Ch2
 	channel 3, Music_DefeatedWildMon_Ch3
 
 Music_CaughtWildMon::
-; move header to header file to port to RBY
 	channel_count 3
 	channel 1, Music_DefeatedWildMon_branch_23b8b
 	channel 2, Music_DefeatedWildMon_branch_23bce

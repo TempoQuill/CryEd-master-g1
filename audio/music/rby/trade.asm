@@ -1,10 +1,8 @@
 Music_Trade1::
-; move header to header file to port to RBY
 	channel_count 1
 	channel 3, Music_Trade_Ch1
 
 Music_Trade2::
-; move header to header file to port to RBY
 	channel_count 1
 	channel 3, Music_Trade_Ch2
 

@@ -1,5 +1,4 @@
 Music_HallOfFame::
-; move header to header file to port to RBY
 	channel_count 3
 	channel 1, Music_HallOfFame_Ch1
 	channel 2, Music_HallOfFame_Ch2

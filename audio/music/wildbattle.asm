@@ -1,12 +1,10 @@
 Music_JohtoWildBattle:
-; move header to header file to port to RBY
 	channel_count 3
 	channel 1, Music_JohtoWildBattle_Ch1
 	channel 2, Music_JohtoWildBattle_Ch2
 	channel 3, Music_JohtoWildBattle_Ch3
 
 Music_JohtoWildBattleNight:
-; move header to header file to port to RBY
 	channel_count 3
 	channel 1, Music_JohtoWildBattleNight_Ch1
 	channel 2, Music_JohtoWildBattleNight_Ch2

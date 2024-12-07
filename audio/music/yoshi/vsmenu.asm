@@ -1,11 +1,9 @@
 Music_VSMenu1:
-; move header to header file to port to RBY
 	channel_count 2
 	channel 1, Music_VSMenu_Ch1
 	channel 2, Music_VSMenu_Ch2
 
 Music_VSMenu2:
-; move header to header file to port to RBY
 	channel_count 2
 	channel 1, Music_VSMenu_Ch3
 	channel 2, Music_VSMenu_Ch4

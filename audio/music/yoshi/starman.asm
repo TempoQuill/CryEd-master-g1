@@ -1,5 +1,4 @@
 Music_Starman:
-; move header to header file to port to RBY
 	channel_count 4
 	channel 1, Music_Starman_Ch1
 	channel 2, Music_Starman_Ch2
@@ -7,7 +6,6 @@ Music_Starman:
 	channel 4, Music_Starman_Ch4
 
 Music_StarmanMenu:
-; move header to header file to port to RBY
 	channel_count 4
 	channel 1, Music_StarmanMenu_Ch1
 	channel 2, Music_StarmanMenu_Ch2

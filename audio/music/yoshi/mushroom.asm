@@ -1,5 +1,4 @@
 Music_Mushroom:
-; move header to header file to port to RBY
 	channel_count 4
 	channel 1, Music_Mushroom_Ch1
 	channel 2, Music_Mushroom_Ch2
@@ -7,7 +6,6 @@ Music_Mushroom:
 	channel 4, Music_Mushroom_Ch4
 
 Music_MushroomMenu:
-; move header to header file to port to RBY
 	channel_count 4
 	channel 1, Music_MushroomMenu_Ch1
 	channel 2, Music_MushroomMenu_Ch2

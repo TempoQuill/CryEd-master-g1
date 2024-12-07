@@ -1,5 +1,4 @@
 Music_VSMatchPlayer1:
-; move header to header file to port to RBY
 	channel_count 4
 	channel 1, Music_VSMatchPlayer1_Ch1
 	channel 2, Music_VSMatchPlayer1_Ch2
@@ -7,7 +6,6 @@ Music_VSMatchPlayer1:
 	channel 4, Music_VSMatchPlayer1_Ch4
 
 Music_VSMatchPlayer2:
-; move header to header file to port to RBY
 	channel_count 4
 	channel 1, Music_VSMatchPlayer1_Ch1
 	channel 2, Music_VSMatchPlayer2_Ch2

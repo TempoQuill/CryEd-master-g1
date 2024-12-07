@@ -1,5 +1,4 @@
 Music_Vermilion::
-; move header to header file to port to RBY
 	channel_count 4
 	channel 1, Music_Vermilion_Ch1
 	channel 2, Music_Vermilion_Ch2

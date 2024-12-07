@@ -1,5 +1,4 @@
 Music_JigglypuffSong::
-; move header to header file to port to RBY
 	channel_count 2
 	channel 1, Music_JigglypuffSong_Ch1
 	channel 2, Music_JigglypuffSong_Ch2

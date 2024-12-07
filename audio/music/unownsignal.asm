@@ -1,5 +1,4 @@
 Music_UnownSignal:
-; move header to header file to port to RBY
 	channel_count 3
 	channel 1, Music_UnownSignal_Ch1
 	channel 2, Music_UnownSignal_Ch2

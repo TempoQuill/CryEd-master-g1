@@ -1,5 +1,4 @@
 Music_RoundClear:
-; move header to header file to port to RBY
 	channel_count 2
 	channel 1, Music_RoundClear_Ch5
 	channel 2, Music_RoundClear_Ch6

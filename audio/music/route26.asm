@@ -1,5 +1,4 @@
 Music_Route26:
-; move header to header file to port to RBY
 	channel_count 4
 	channel 1, Music_Route26_Ch1
 	channel 2, Music_Route26_Ch2

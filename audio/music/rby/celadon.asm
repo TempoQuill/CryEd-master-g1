@@ -1,5 +1,4 @@
 Music_Celadon::
-; move header to header file to port to RBY
 	channel_count 3
 	channel 1, Music_Celadon_Ch1
 	channel 2, Music_Celadon_Ch2

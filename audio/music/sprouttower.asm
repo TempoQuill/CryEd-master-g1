@@ -1,5 +1,4 @@
 Music_SproutTower:
-; move header to header file to port to RBY
 	channel_count 4
 	channel 1, Music_SproutTower_Ch1
 	channel 2, Music_SproutTower_Ch2

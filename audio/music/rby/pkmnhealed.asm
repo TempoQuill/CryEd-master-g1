@@ -1,5 +1,4 @@
 Music_PkmnHealed::
-; move header to header file to port to RBY
 	channel_count 3
 	channel 1, Music_PkmnHealed_Ch1
 	channel 2, Music_PkmnHealed_Ch2
