@@ -5,1291 +5,1268 @@ Music_CreditsGSC:
 	channel 3, Music_CreditsGSC_Ch3
 
 Music_CreditsGSC_Ch1:
-	db	$ed,$00,$8c
-	db	$f0,$77
-	db	$e8
-	db	$ea,$7,$22
-	db	$ec,$03
-; P1-1
-	db	$dc,$a3
-	db	$c1
-	db	$e5,$b3
-	db	$b3
-	db	$b3
-	db	$b1
-; P1-2
-	db	$dc,$82
-	db	$e4,$81
-	db	$61
-	db	$41
-	db	$21
-	db	$11
-	db	$e5,$b1
-	db	$91
-	db	$81
-; P1-3
-	db	$dc,$a4
-	db	$e4,$13
-	db	$21
-	db	$41
-	db	$81
-	db	$61
-	db	$41
-	db	$11
-; P1-4
-	db	$e5,$b3
-	db	$91
-	db	$83
-	db	$93
-	db	$b1
-; P1-5
-	db	$73
-	db	$41
-	db	$e6,$b3
-	db	$e5,$93
-	db	$71
-; P1-6
-	db	$63
-	db	$71
-	db	$91
-	db	$61
-	db	$23
-	db	$41
-; P1-7
-	db	$53
-	db	$21
-	db	$e6,$93
-	db	$e5,$73
-	db	$53
-; P1-8	-tie
-	db	$91
-	db	$41
-	db	$11
-	db	$e6,$91
-	db	$e5,$11
-	db	$41
-	db	$91
-; P1-9
-	db	$e4,$35
-	db	$13
-	db	$e5,$b3
-	db	$91
-; P1-10
-	db	$81
-	db	$41
-	db	$61
-	db	$83
-	db	$e6,$b1
-	db	$e5,$61
-	db	$41
-; P1-11
-	db	$13
-	db	$21
-	db	$41
-	db	$81
-	db	$61
-	db	$41
-	db	$11
-; P1-12
-	db	$b3
-	db	$91
-	db	$83
-	db	$93
-	db	$b1
-; P1-13
-	db	$73
-	db	$41
-	db	$e6,$b3
-	db	$e5,$93
-	db	$71
-; P1-14
-	db	$63
-	db	$71
-	db	$91
-	db	$61
-	db	$23
-	db	$41
-; P1-15
-	db	$53
-	db	$21
-	db	$e6,$93
-	db	$e5,$73
-	db	$53
-; P1-16	-tie
-	db	$91
-	db	$41
-	db	$11
-	db	$e6,$91
-	db	$e5,$11
-	db	$41
-	db	$91
-; P1-17
-	db	$e4,$35
-	db	$13
-	db	$e5,$b3
-	db	$91
-; P1-18
-	db	$81
-	db	$41
-	db	$61
-	db	$83
-	db	$b1
-	db	$91
-	db	$e4,$11
-; P1-19
-	db	$21
-	db	$e5,$91
-	db	$e4,$41
-	db	$e5,$91
-	db	$e4,$61
-	db	$e5,$91
-	db	$e4,$91
-	db	$61
-; P1-20
-	db	$81
-	db	$61
-	db	$41
-	db	$e5,$b3
-	db	$91
-	db	$81
-	db	$91
-; P1-21
-	db	$81
-	db	$e4,$41
-	db	$e5,$91
-	db	$e4,$41
-	db	$e5,$b1
-	db	$e4,$41
-	db	$21
-	db	$41
-; P1-22
-	db	$11
-	db	$21
-	db	$41
-	db	$13
-	db	$41
-	db	$21
-	db	$11
-; P1-23
-	db	$e5,$b1
-	db	$93
-	db	$e4,$23
-	db	$21
-	db	$41
-	db	$61
-; P1-24
-	db	$11
-	db	$41
-	db	$11
-	db	$e5,$b1
-	db	$e4,$41
-	db	$e5,$91
-	db	$41
-	db	$b1
-; P1-25
-	db	$81
-	db	$91
-	db	$b1
-	db	$83
-	db	$91
-	db	$b1
-	db	$e4,$41
-; P1-26
-	db	$15
-	db	$25
-	db	$43
-; P1-27
-	db	$21
-	db	$e5,$91
-	db	$e4,$41
-	db	$e5,$91
-	db	$e4,$61
-	db	$e5,$91
-	db	$e4,$91
-	db	$61
-; P1-28
-	db	$81
-	db	$61
-	db	$41
-	db	$e5,$b3
-	db	$91
-	db	$81
-	db	$91
-; P1-29
-	db	$81
-	db	$e4,$41
-	db	$e5,$91
-	db	$e4,$41
-	db	$e5,$b1
-	db	$e4,$41
-	db	$21
-	db	$41
-; P1-30
-	db	$11
-	db	$21
-	db	$41
-	db	$13
-	db	$41
-	db	$21
-	db	$11
-; P1-31
-	db	$e5,$b1
-	db	$93
-	db	$e4,$23
-	db	$21
-	db	$41
-	db	$61
-; P1-32
-	db	$61
-	db	$41
-	db	$31
-	db	$43
-	db	$63
-	db	$e5,$b1
-; P1-33
-	db	$85
-	db	$65
-	db	$83
-; P1-34
-	db	$dc,$a3
-	db	$41
-	db	$23
-	db	$13
-	db	$e6,$b3
-	db	$81
-; P1-35
-	db	$dc,$a7
-	db	$95
-	db	$99
-; P1-36
-	db	$e5,$15
-	db	$19
-; P1-37
-	db	$65
-	db	$69
-; P1-38
-	db	$25
-	db	$47
-	db	$41
-; P1-39
-	db	$dc,$a2
-	db	$e6,$93
-	db	$dc,$a3
-	db	$93
-	db	$b3
-	db	$e5,$03
-; P1-40
-	db	$13
-	db	$43
-	db	$e4,$13
-	db	$e5,$83
-; P1-41
-	db	$93
-	db	$63
-	db	$23
-	db	$93
-; P1-42
-	db	$b3
-	db	$e4,$23
-	db	$43
-	db	$83
-; P1-43
-	db	$dc,$a7
-	db	$e3,$1b
-	db	$d8,$c1
-	db	$e4,$b1
-	db	$b1
-	db	$b1
-; P1-44
-	db	$dc,$a7
-	db	$bb
-	db	$d8,$c1
-	db	$b1
-	db	$b1
-	db	$e3,$01
-; P1-45
-	db	$dc,$a7
-	db	$15
-	db	$dc,$c1
-	db	$10
-	db	$40
-	db	$11
-	db	$11
-	db	$d8,$c1
-	db	$11
-	db	$11
-	db	$01
-; P1-46
-	db	$e4,$b5
-	db	$75
-	db	$21
-	db	$21
-	db	$21
-	db	$e5,$71
-	db	$71
-	db	$81
-; P1-47
-	db	$dc,$c1
-	db	$9f
-; P1-48
-	db	$cf
-	db	$ff
+	tempo 140
+	volume 7, 7
+	toggle_perfect_pitch
+	vibrato 7, 2, 2
+	duty_cycle 3
+	note_type 12, 10, 3
+	rest 2
+	octave 3
+	note B_, 4
+	note B_, 4
+	note B_, 4
+	note B_, 2
+	note_type 12, 8, 2
+	octave 4
+	note G#, 2
+	note F#, 2
+	note E_, 2
+	note D_, 2
+	note C#, 2
+	octave 3
+	note B_, 2
+	note A_, 2
+	note G#, 2
+	note_type 12, 10, 4
+	octave 4
+	note C#, 4
+	note D_, 2
+	note E_, 2
+	note G#, 2
+	note F#, 2
+	note E_, 2
+	note C#, 2
+	octave 3
+	note B_, 4
+	note A_, 2
+	note G#, 4
+	note A_, 4
+	note B_, 2
+	note G_, 4
+	note E_, 2
+	octave 2
+	note B_, 4
+	octave 3
+	note A_, 4
+	note G_, 2
+	note F#, 4
+	note G_, 2
+	note A_, 2
+	note F#, 2
+	note D_, 4
+	note E_, 2
+	note F_, 4
+	note D_, 2
+	octave 2
+	note A_, 4
+	octave 3
+	note G_, 4
+	note F_, 4
+	note A_, 2
+	note E_, 2
+	note C#, 2
+	octave 2
+	note A_, 2
+	octave 3
+	note C#, 2
+	note E_, 2
+	note A_, 2
+	octave 4
+	note D#, 6
+	note C#, 4
+	octave 3
+	note B_, 4
+	note A_, 2
+	note G#, 2
+	note E_, 2
+	note F#, 2
+	note G#, 4
+	octave 2
+	note B_, 2
+	octave 3
+	note F#, 2
+	note E_, 2
+	note C#, 4
+	note D_, 2
+	note E_, 2
+	note G#, 2
+	note F#, 2
+	note E_, 2
+	note C#, 2
+	note B_, 4
+	note A_, 2
+	note G#, 4
+	note A_, 4
+	note B_, 2
+	note G_, 4
+	note E_, 2
+	octave 2
+	note B_, 4
+	octave 3
+	note A_, 4
+	note G_, 2
+	note F#, 4
+	note G_, 2
+	note A_, 2
+	note F#, 2
+	note D_, 4
+	note E_, 2
+	note F_, 4
+	note D_, 2
+	octave 2
+	note A_, 4
+	octave 3
+	note G_, 4
+	note F_, 4
+	note A_, 2
+	note E_, 2
+	note C#, 2
+	octave 2
+	note A_, 2
+	octave 3
+	note C#, 2
+	note E_, 2
+	note A_, 2
+	octave 4
+	note D#, 6
+	note C#, 4
+	octave 3
+	note B_, 4
+	note A_, 2
+	note G#, 2
+	note E_, 2
+	note F#, 2
+	note G#, 4
+	note B_, 2
+	note A_, 2
+	octave 4
+	note C#, 2
+	note D_, 2
+	octave 3
+	note A_, 2
+	octave 4
+	note E_, 2
+	octave 3
+	note A_, 2
+	octave 4
+	note F#, 2
+	octave 3
+	note A_, 2
+	octave 4
+	note A_, 2
+	note F#, 2
+	note G#, 2
+	note F#, 2
+	note E_, 2
+	octave 3
+	note B_, 4
+	note A_, 2
+	note G#, 2
+	note A_, 2
+	note G#, 2
+	octave 4
+	note E_, 2
+	octave 3
+	note A_, 2
+	octave 4
+	note E_, 2
+	octave 3
+	note B_, 2
+	octave 4
+	note E_, 2
+	note D_, 2
+	note E_, 2
+	note C#, 2
+	note D_, 2
+	note E_, 2
+	note C#, 4
+	note E_, 2
+	note D_, 2
+	note C#, 2
+	octave 3
+	note B_, 2
+	note A_, 4
+	octave 4
+	note D_, 4
+	note D_, 2
+	note E_, 2
+	note F#, 2
+	note C#, 2
+	note E_, 2
+	note C#, 2
+	octave 3
+	note B_, 2
+	octave 4
+	note E_, 2
+	octave 3
+	note A_, 2
+	note E_, 2
+	note B_, 2
+	note G#, 2
+	note A_, 2
+	note B_, 2
+	note G#, 4
+	note A_, 2
+	note B_, 2
+	octave 4
+	note E_, 2
+	note C#, 6
+	note D_, 6
+	note E_, 4
+	note D_, 2
+	octave 3
+	note A_, 2
+	octave 4
+	note E_, 2
+	octave 3
+	note A_, 2
+	octave 4
+	note F#, 2
+	octave 3
+	note A_, 2
+	octave 4
+	note A_, 2
+	note F#, 2
+	note G#, 2
+	note F#, 2
+	note E_, 2
+	octave 3
+	note B_, 4
+	note A_, 2
+	note G#, 2
+	note A_, 2
+	note G#, 2
+	octave 4
+	note E_, 2
+	octave 3
+	note A_, 2
+	octave 4
+	note E_, 2
+	octave 3
+	note B_, 2
+	octave 4
+	note E_, 2
+	note D_, 2
+	note E_, 2
+	note C#, 2
+	note D_, 2
+	note E_, 2
+	note C#, 4
+	note E_, 2
+	note D_, 2
+	note C#, 2
+	octave 3
+	note B_, 2
+	note A_, 4
+	octave 4
+	note D_, 4
+	note D_, 2
+	note E_, 2
+	note F#, 2
+	note F#, 2
+	note E_, 2
+	note D#, 2
+	note E_, 4
+	note F#, 4
+	octave 3
+	note B_, 2
+	note G#, 6
+	note F#, 6
+	note G#, 4
+	note_type 12, 10, 3
+	note E_, 2
+	note D_, 4
+	note C#, 4
+	octave 2
+	note B_, 4
+	note G#, 2
+	note_type 12, 10, 7
+	note A_, 6
+	note A_, 10
+	octave 3
+	note C#, 6
+	note C#, 10
+	note F#, 6
+	note F#, 10
+	note D_, 6
+	note E_, 8
+	note E_, 2
+	note_type 12, 10, 2
+	octave 2
+	note A_, 4
+	note_type 12, 10, 3
+	note A_, 4
+	note B_, 4
+	octave 3
+	note C_, 4
+	note C#, 4
+	note E_, 4
+	octave 4
+	note C#, 4
+	octave 3
+	note G#, 4
+	note A_, 4
+	note F#, 4
+	note D_, 4
+	note A_, 4
+	note B_, 4
+	octave 4
+	note D_, 4
+	note E_, 4
+	note G#, 4
+	note_type 12, 10, 7
+	octave 5
+	note C#, 12
+	note_type 8, 12, 1
+	octave 4
+	note B_, 2
+	note B_, 2
+	note B_, 2
+	note_type 12, 10, 7
+	note B_, 12
+	note_type 8, 12, 1
+	note B_, 2
+	note B_, 2
+	octave 5
+	note C_, 2
+	note_type 12, 10, 7
+	note C#, 6
+	note_type 12, 12, 1
+	note C#, 1
+	note E_, 1
+	note C#, 2
+	note C#, 2
+	note_type 8, 12, 1
+	note C#, 2
+	note C#, 2
+	note C_, 2
+	octave 4
+	note B_, 6
+	note G_, 6
+	note D_, 2
+	note D_, 2
+	note D_, 2
+	octave 3
+	note G_, 2
+	note G_, 2
+	note G#, 2
+	note_type 12, 12, 1
+	note A_, 16
+	rest 16
+	sound_ret
 
 Music_CreditsGSC_Ch2:
-	db	$ea,$e,$33
-	db	$ec,$03
-; P2-1
-	db	$dc,$72
-	db	$e5,$b1
-	db	$ec,$02
-	db	$dc,$b4
-	db	$e4,$93
-	db	$93
-	db	$93
-	db	$91
-; P2-2
-	db	$dc,$b3
-	db	$b1
-	db	$91
-	db	$81
-	db	$61
-	db	$41
-	db	$21
-	db	$dc,$c5
-	db	$11
-	db	$21
-; P2-3
-	db	$dc,$c6
-	db	$47
-	db	$dc,$c5
-	db	$b1
-	db	$91
-	db	$81
-	db	$91
-; P2-4
-	db	$dc,$c6
-	db	$49
-	db	$dc,$c5
-	db	$13
-	db	$21
-; P2-5
-	db	$dc,$c6
-	db	$49
-	db	$dc,$c5
-	db	$63
-	db	$11
-; P2-6
-	db	$45
-	db	$23
-	db	$e5,$b3
-	db	$e4,$11
-; P2-7
-	db	$dc,$c6
-	db	$29
-	db	$dc,$c5
-	db	$43
-	db	$21
-; P2-8
-	db	$11
-	db	$01
-	db	$11
-	db	$85
-	db	$63
-; P2-9
-	db	$dc,$c6
-	db	$e5,$bf
-; P2-10
-	db	$dc,$c5
-	db	$e4,$43
-	db	$e5,$b1
-	db	$e4,$43
-	db	$13
-	db	$21
-; P2-11
-	db	$dc,$c6
-	db	$47
-	db	$dc,$c5
-	db	$b1
-	db	$91
-	db	$81
-	db	$91
-; P2-12
-	db	$dc,$c6
-	db	$49
-	db	$dc,$c5
-	db	$13
-	db	$21
-; P2-13
-	db	$dc,$c6
-	db	$49
-	db	$dc,$c5
-	db	$63
-	db	$11
-; P2-14
-	db	$45
-	db	$23
-	db	$e5,$b3
-	db	$e4,$11
-; P2-15
-	db	$dc,$c6
-	db	$29
-	db	$dc,$c5
-	db	$43
-	db	$21
-; P2-16
-	db	$11
-	db	$01
-	db	$11
-	db	$85
-	db	$63
-; P2-17
-	db	$dc,$c6
-	db	$e5,$bf
-; P2-18
-	db	$dc,$c5
-	db	$e4,$41
-	db	$e5,$41
-	db	$b1
-	db	$e4,$45
-	db	$53
-; P2-19
-	db	$ec,$03
-	db	$63
-	db	$83
-	db	$93
-	db	$e3,$13
-; P2-20
-	db	$dc,$c7
-	db	$e4,$bf
-; P2-21
-	db	$dc,$c5
-	db	$43
-	db	$63
-	db	$83
-	db	$b3
-; P2-22
-	db	$dc,$c7
-	db	$99
-	db	$dc,$c5
-	db	$91
-	db	$81
-	db	$91
-; P2-23
-	db	$dc,$c7
-	db	$69
-	db	$dc,$c5
-	db	$61
-	db	$81
-	db	$91
-; P2-24
-	db	$95
-	db	$83
-	db	$63
-	db	$81
-; P2-25
-	db	$45
-	db	$dc,$c7
-	db	$b9
-; P2-26
-	db	$dc,$a3
-	db	$e6,$95
-	db	$b5
-	db	$e5,$13
-; P2-27
-	db	$dc,$c5
-	db	$e4,$63
-	db	$83
-	db	$93
-	db	$e3,$13
-; P2-28
-	db	$dc,$c7
-	db	$e4,$bf
-; P2-29
-	db	$dc,$c5
-	db	$43
-	db	$63
-	db	$83
-	db	$b3
-; P2-30
-	db	$dc,$c7
-	db	$99
-	db	$dc,$c5
-	db	$91
-	db	$81
-	db	$91
-; P2-31
-	db	$dc,$c7
-	db	$69
-	db	$dc,$c5
-	db	$61
-	db	$81
-	db	$91
-; P2-32
-	db	$95
-	db	$83
-	db	$95
-; P2-33
-	db	$dc,$c7
-	db	$b5
-	db	$b9
-; P2-34
-	db	$dc,$a3
-	db	$e5,$81
-	db	$63
-	db	$43
-	db	$23
-	db	$61
-; P2-35
-	db	$dc,$a7
-	db	$45
-	db	$49
-; P2-36
-	db	$85
-	db	$89
-; P2-37
-	db	$95
-	db	$99
-; P2-38
-	db	$65
-	db	$b7
-	db	$81
-; P2-39
-	db	$dc,$a2
-	db	$93
-	db	$e6,$93
-	db	$93
-	db	$93
-; P2-40
-	db	$e4,$13
-	db	$e5,$13
-	db	$13
-	db	$13
-; P2-41
-	db	$e4,$23
-	db	$e5,$23
-	db	$23
-	db	$23
-; P2-42
-	db	$e4,$43
-	db	$e5,$43
-	db	$e4,$43
-	db	$e5,$43
-; P2-43
-	db	$dc,$c7
-	db	$e4,$9b
-	db	$d8,$c1
-	db	$71
-	db	$71
-	db	$81
-; P2-44
-	db	$dc,$c7
-	db	$9b
-	db	$d8,$c1
-	db	$71
-	db	$71
-	db	$81
-; P2-45
-	db	$dc,$c7
-	db	$95
-	db	$dc,$c1
-	db	$10
-	db	$40
-	db	$91
-	db	$91
-	db	$d8,$c1
-	db	$91
-	db	$91
-	db	$81
-; P2-46
-	db	$75
-	db	$25
-	db	$71
-	db	$71
-	db	$71
-	db	$71
-	db	$71
-	db	$81
-; P2-47
-	db	$9b
-	db	$dc,$f7
-	db	$e7,$9f
-; P2-48	-tie
-	db	$c7
-	db	$ff
+	vibrato 14, 3, 3
+	duty_cycle 3
+	note_type 12, 7, 2
+	octave 3
+	note B_, 2
+	duty_cycle 2
+	note_type 12, 11, 4
+	octave 4
+	note A_, 4
+	note A_, 4
+	note A_, 4
+	note A_, 2
+	note_type 12, 11, 3
+	note B_, 2
+	note A_, 2
+	note G#, 2
+	note F#, 2
+	note E_, 2
+	note D_, 2
+	note_type 12, 12, 5
+	note C#, 2
+	note D_, 2
+	note_type 12, 12, 6
+	note E_, 8
+	note_type 12, 12, 5
+	note B_, 2
+	note A_, 2
+	note G#, 2
+	note A_, 2
+	note_type 12, 12, 6
+	note E_, 10
+	note_type 12, 12, 5
+	note C#, 4
+	note D_, 2
+	note_type 12, 12, 6
+	note E_, 10
+	note_type 12, 12, 5
+	note F#, 4
+	note C#, 2
+	note E_, 6
+	note D_, 4
+	octave 3
+	note B_, 4
+	octave 4
+	note C#, 2
+	note_type 12, 12, 6
+	note D_, 10
+	note_type 12, 12, 5
+	note E_, 4
+	note D_, 2
+	note C#, 2
+	note C_, 2
+	note C#, 2
+	note G#, 6
+	note F#, 4
+	note_type 12, 12, 6
+	octave 3
+	note B_, 16
+	note_type 12, 12, 5
+	octave 4
+	note E_, 4
+	octave 3
+	note B_, 2
+	octave 4
+	note E_, 4
+	note C#, 4
+	note D_, 2
+	note_type 12, 12, 6
+	note E_, 8
+	note_type 12, 12, 5
+	note B_, 2
+	note A_, 2
+	note G#, 2
+	note A_, 2
+	note_type 12, 12, 6
+	note E_, 10
+	note_type 12, 12, 5
+	note C#, 4
+	note D_, 2
+	note_type 12, 12, 6
+	note E_, 10
+	note_type 12, 12, 5
+	note F#, 4
+	note C#, 2
+	note E_, 6
+	note D_, 4
+	octave 3
+	note B_, 4
+	octave 4
+	note C#, 2
+	note_type 12, 12, 6
+	note D_, 10
+	note_type 12, 12, 5
+	note E_, 4
+	note D_, 2
+	note C#, 2
+	note C_, 2
+	note C#, 2
+	note G#, 6
+	note F#, 4
+	note_type 12, 12, 6
+	octave 3
+	note B_, 16
+	note_type 12, 12, 5
+	octave 4
+	note E_, 2
+	octave 3
+	note E_, 2
+	note B_, 2
+	octave 4
+	note E_, 6
+	note F_, 4
+	duty_cycle 3
+	note F#, 4
+	note G#, 4
+	note A_, 4
+	octave 5
+	note C#, 4
+	note_type 12, 12, 7
+	octave 4
+	note B_, 16
+	note_type 12, 12, 5
+	note E_, 4
+	note F#, 4
+	note G#, 4
+	note B_, 4
+	note_type 12, 12, 7
+	note A_, 10
+	note_type 12, 12, 5
+	note A_, 2
+	note G#, 2
+	note A_, 2
+	note_type 12, 12, 7
+	note F#, 10
+	note_type 12, 12, 5
+	note F#, 2
+	note G#, 2
+	note A_, 2
+	note A_, 6
+	note G#, 4
+	note F#, 4
+	note G#, 2
+	note E_, 6
+	note_type 12, 12, 7
+	note B_, 10
+	note_type 12, 10, 3
+	octave 2
+	note A_, 6
+	note B_, 6
+	octave 3
+	note C#, 4
+	note_type 12, 12, 5
+	octave 4
+	note F#, 4
+	note G#, 4
+	note A_, 4
+	octave 5
+	note C#, 4
+	note_type 12, 12, 7
+	octave 4
+	note B_, 16
+	note_type 12, 12, 5
+	note E_, 4
+	note F#, 4
+	note G#, 4
+	note B_, 4
+	note_type 12, 12, 7
+	note A_, 10
+	note_type 12, 12, 5
+	note A_, 2
+	note G#, 2
+	note A_, 2
+	note_type 12, 12, 7
+	note F#, 10
+	note_type 12, 12, 5
+	note F#, 2
+	note G#, 2
+	note A_, 2
+	note A_, 6
+	note G#, 4
+	note A_, 6
+	note_type 12, 12, 7
+	note B_, 6
+	note B_, 10
+	note_type 12, 10, 3
+	octave 3
+	note G#, 2
+	note F#, 4
+	note E_, 4
+	note D_, 4
+	note F#, 2
+	note_type 12, 10, 7
+	note E_, 6
+	note E_, 10
+	note G#, 6
+	note G#, 10
+	note A_, 6
+	note A_, 10
+	note F#, 6
+	note B_, 8
+	note G#, 2
+	note_type 12, 10, 2
+	note A_, 4
+	octave 2
+	note A_, 4
+	note A_, 4
+	note A_, 4
+	octave 4
+	note C#, 4
+	octave 3
+	note C#, 4
+	note C#, 4
+	note C#, 4
+	octave 4
+	note D_, 4
+	octave 3
+	note D_, 4
+	note D_, 4
+	note D_, 4
+	octave 4
+	note E_, 4
+	octave 3
+	note E_, 4
+	octave 4
+	note E_, 4
+	octave 3
+	note E_, 4
+	note_type 12, 12, 7
+	octave 4
+	note A_, 12
+	note_type 8, 12, 1
+	note G_, 2
+	note G_, 2
+	note G#, 2
+	note_type 12, 12, 7
+	note A_, 12
+	note_type 8, 12, 1
+	note G_, 2
+	note G_, 2
+	note G#, 2
+	note_type 12, 12, 7
+	note A_, 6
+	note_type 12, 12, 1
+	note C#, 1
+	note E_, 1
+	note A_, 2
+	note A_, 2
+	note_type 8, 12, 1
+	note A_, 2
+	note A_, 2
+	note G#, 2
+	note G_, 6
+	note D_, 6
+	note G_, 2
+	note G_, 2
+	note G_, 2
+	note G_, 2
+	note G_, 2
+	note G#, 2
+	note A_, 12
+	note_type 12, 15, 7
+	octave 1
+	note A_, 16
+	rest 8
+	sound_ret
 
 Music_CreditsGSC_Ch3:
-	db	$ea,$e,$21
-; P3-1
-	db	$dc,$11
-	db	$e4,$40
-	db	$c0
-	db	$90
-	db	$c0
-	db	$40
-	db	$c0
-	db	$90
-	db	$c0
-	db	$b0
-	db	$c0
-	db	$90
-	db	$c0
-	db	$80
-	db	$c0
-	db	$60
-	db	$c0
-; P3-2
-	db	$40
-	db	$c0
-	db	$b0
-	db	$c0
-	db	$40
-	db	$c0
-	db	$b0
-	db	$c0
-	db	$40
-	db	$c0
-	db	$b0
-	db	$c0
-	db	$e3,$40
-	db	$c0
-	db	$e4,$b0
-	db	$c0
-; P3-3
-	db	$40
-	db	$c0
-	db	$90
-	db	$c0
-	db	$40
-	db	$c0
-	db	$90
-	db	$c0
-	db	$40
-	db	$c0
-	db	$90
-	db	$c0
-	db	$40
-	db	$c0
-	db	$90
-	db	$c0
-; P3-4
-	db	$40
-	db	$c0
-	db	$b0
-	db	$c0
-	db	$40
-	db	$c0
-	db	$b0
-	db	$c0
-	db	$40
-	db	$c0
-	db	$b0
-	db	$c0
-	db	$40
-	db	$c0
-	db	$b0
-	db	$c0
-; P3-5
-	db	$40
-	db	$c0
-	db	$b0
-	db	$c0
-	db	$40
-	db	$c0
-	db	$b0
-	db	$c0
-	db	$40
-	db	$c0
-	db	$e5,$b0
-	db	$c0
-	db	$e4,$40
-	db	$c0
-	db	$b0
-	db	$c0
-; P3-6
-	db	$20
-	db	$c0
-	db	$90
-	db	$c0
-	db	$20
-	db	$c0
-	db	$90
-	db	$c0
-	db	$20
-	db	$c0
-	db	$90
-	db	$c0
-	db	$20
-	db	$c0
-	db	$90
-	db	$c0
-; P3-7
-	db	$20
-	db	$c0
-	db	$90
-	db	$c0
-	db	$20
-	db	$c0
-	db	$90
-	db	$c0
-	db	$20
-	db	$c0
-	db	$90
-	db	$c0
-	db	$b0
-	db	$c0
-	db	$90
-	db	$c0
-; P3-8
-	db	$40
-	db	$c0
-	db	$90
-	db	$c0
-	db	$40
-	db	$c0
-	db	$10
-	db	$c0
-	db	$40
-	db	$c0
-	db	$90
-	db	$c0
-	db	$40
-	db	$c0
-	db	$90
-	db	$c0
-; P3-9
-	db	$60
-	db	$c0
-	db	$b0
-	db	$c0
-	db	$60
-	db	$c0
-	db	$b0
-	db	$c0
-	db	$60
-	db	$c0
-	db	$b0
-	db	$c0
-	db	$60
-	db	$c0
-	db	$b0
-	db	$c0
-; P3-10
-	db	$80
-	db	$c0
-	db	$b0
-	db	$c0
-	db	$80
-	db	$c0
-	db	$b0
-	db	$c0
-	db	$80
-	db	$c0
-	db	$40
-	db	$c0
-	db	$60
-	db	$c0
-	db	$80
-	db	$c0
-; P3-11
-	db	$40
-	db	$c0
-	db	$90
-	db	$c0
-	db	$40
-	db	$c0
-	db	$90
-	db	$c0
-	db	$40
-	db	$c0
-	db	$90
-	db	$c0
-	db	$40
-	db	$c0
-	db	$90
-	db	$c0
-; P3-12
-	db	$40
-	db	$c0
-	db	$b0
-	db	$c0
-	db	$40
-	db	$c0
-	db	$b0
-	db	$c0
-	db	$40
-	db	$c0
-	db	$b0
-	db	$c0
-	db	$40
-	db	$c0
-	db	$b0
-	db	$c0
-; P3-13
-	db	$40
-	db	$c0
-	db	$b0
-	db	$c0
-	db	$40
-	db	$c0
-	db	$b0
-	db	$c0
-	db	$40
-	db	$c0
-	db	$e5,$b0
-	db	$c0
-	db	$e4,$40
-	db	$c0
-	db	$b0
-	db	$c0
-; P3-14
-	db	$20
-	db	$c0
-	db	$90
-	db	$c0
-	db	$20
-	db	$c0
-	db	$90
-	db	$c0
-	db	$20
-	db	$c0
-	db	$90
-	db	$c0
-	db	$20
-	db	$c0
-	db	$90
-	db	$c0
-; P3-15
-	db	$20
-	db	$c0
-	db	$90
-	db	$c0
-	db	$20
-	db	$c0
-	db	$90
-	db	$c0
-	db	$20
-	db	$c0
-	db	$90
-	db	$c0
-	db	$b0
-	db	$c0
-	db	$90
-	db	$c0
-; P3-16
-	db	$40
-	db	$c0
-	db	$90
-	db	$c0
-	db	$40
-	db	$c0
-	db	$10
-	db	$c0
-	db	$40
-	db	$c0
-	db	$90
-	db	$c0
-	db	$40
-	db	$c0
-	db	$90
-	db	$c0
-; P3-17
-	db	$60
-	db	$c0
-	db	$b0
-	db	$c0
-	db	$60
-	db	$c0
-	db	$b0
-	db	$c0
-	db	$60
-	db	$c0
-	db	$b0
-	db	$c0
-	db	$60
-	db	$c0
-	db	$b0
-	db	$c0
-; P3-18
-	db	$80
-	db	$c0
-	db	$b0
-	db	$c0
-	db	$80
-	db	$c0
-	db	$b0
-	db	$c0
-	db	$80
-	db	$c0
-	db	$40
-	db	$c0
-	db	$10
-	db	$c0
-	db	$90
-	db	$c0
-; P3-19
-	db	$20
-	db	$c0
-	db	$90
-	db	$c0
-	db	$20
-	db	$c0
-	db	$90
-	db	$c0
-	db	$20
-	db	$c0
-	db	$90
-	db	$c0
-	db	$20
-	db	$c0
-	db	$90
-	db	$c0
-; P3-20
-	db	$40
-	db	$c0
-	db	$b0
-	db	$c0
-	db	$40
-	db	$c0
-	db	$b0
-	db	$c0
-	db	$40
-	db	$c0
-	db	$b0
-	db	$c0
-	db	$40
-	db	$c0
-	db	$b0
-	db	$c0
-; P3-21
-	db	$40
-	db	$c0
-	db	$b0
-	db	$c0
-	db	$40
-	db	$c0
-	db	$b0
-	db	$c0
-	db	$40
-	db	$c0
-	db	$b0
-	db	$c0
-	db	$40
-	db	$c0
-	db	$b0
-	db	$c0
-; P3-22
-	db	$40
-	db	$c0
-	db	$90
-	db	$c0
-	db	$40
-	db	$c0
-	db	$90
-	db	$c0
-	db	$40
-	db	$c0
-	db	$90
-	db	$c0
-	db	$40
-	db	$c0
-	db	$90
-	db	$c0
-; P3-23
-	db	$20
-	db	$c0
-	db	$90
-	db	$c0
-	db	$20
-	db	$c0
-	db	$90
-	db	$c0
-	db	$20
-	db	$c0
-	db	$90
-	db	$c0
-	db	$20
-	db	$c0
-	db	$90
-	db	$c0
-; P3-24
-	db	$40
-	db	$c0
-	db	$b0
-	db	$c0
-	db	$40
-	db	$c0
-	db	$b0
-	db	$c0
-	db	$40
-	db	$c0
-	db	$b0
-	db	$c0
-	db	$40
-	db	$c0
-	db	$b0
-	db	$c0
-; P3-25
-	db	$40
-	db	$c0
-	db	$b0
-	db	$c0
-	db	$40
-	db	$c0
-	db	$b0
-	db	$c0
-	db	$40
-	db	$c0
-	db	$b0
-	db	$c0
-	db	$40
-	db	$c0
-	db	$b0
-	db	$c0
-; P3-26
-	db	$40
-	db	$c0
-	db	$90
-	db	$c0
-	db	$40
-	db	$c0
-	db	$90
-	db	$c0
-	db	$40
-	db	$c0
-	db	$90
-	db	$c0
-	db	$40
-	db	$c0
-	db	$90
-	db	$c0
-; P3-27
-	db	$20
-	db	$c0
-	db	$90
-	db	$c0
-	db	$20
-	db	$c0
-	db	$90
-	db	$c0
-	db	$20
-	db	$c0
-	db	$90
-	db	$c0
-	db	$20
-	db	$c0
-	db	$90
-	db	$c0
-; P3-28
-	db	$40
-	db	$c0
-	db	$b0
-	db	$c0
-	db	$40
-	db	$c0
-	db	$b0
-	db	$c0
-	db	$40
-	db	$c0
-	db	$b0
-	db	$c0
-	db	$40
-	db	$c0
-	db	$b0
-	db	$c0
-; P3-29
-	db	$40
-	db	$c0
-	db	$b0
-	db	$c0
-	db	$40
-	db	$c0
-	db	$b0
-	db	$c0
-	db	$40
-	db	$c0
-	db	$b0
-	db	$c0
-	db	$40
-	db	$c0
-	db	$b0
-	db	$c0
-; P3-30
-	db	$40
-	db	$c0
-	db	$90
-	db	$c0
-	db	$40
-	db	$c0
-	db	$90
-	db	$c0
-	db	$40
-	db	$c0
-	db	$90
-	db	$c0
-	db	$40
-	db	$c0
-	db	$90
-	db	$c0
-; P3-31
-	db	$20
-	db	$c0
-	db	$90
-	db	$c0
-	db	$20
-	db	$c0
-	db	$90
-	db	$c0
-	db	$20
-	db	$c0
-	db	$90
-	db	$c0
-	db	$20
-	db	$c0
-	db	$90
-	db	$c0
-; P3-32
-	db	$60
-	db	$c0
-	db	$b0
-	db	$c0
-	db	$60
-	db	$c0
-	db	$b0
-	db	$c0
-	db	$60
-	db	$c0
-	db	$b0
-	db	$c0
-	db	$60
-	db	$c0
-	db	$b0
-	db	$c0
-; P3-33
-	db	$40
-	db	$c0
-	db	$b0
-	db	$c0
-	db	$40
-	db	$c0
-	db	$b0
-	db	$c0
-	db	$40
-	db	$c0
-	db	$b0
-	db	$c0
-	db	$40
-	db	$c0
-	db	$b0
-	db	$c0
-; P3-34
-	db	$40
-	db	$c0
-	db	$b0
-	db	$c0
-	db	$40
-	db	$c0
-	db	$b0
-	db	$c0
-	db	$40
-	db	$c0
-	db	$b0
-	db	$c0
-	db	$40
-	db	$c0
-	db	$b0
-	db	$c0
-; P3-35
-	db	$90
-	db	$c2
-	db	$dc,$24
-	db	$13
-	db	$23
-	db	$33
-; P3-36
-	db	$43
-	db	$83
-	db	$e3,$43
-	db	$23
-; P3-37
-	db	$23
-	db	$13
-	db	$13
-	db	$e4,$b3
-; P3-38
-	db	$b3
-	db	$93
-	db	$83
-	db	$b3
-; P3-39
-	db	$c3
-	db	$dc,$14
-	db	$13
-	db	$23
-	db	$33
-; P3-40
-	db	$43
-	db	$83
-	db	$e3,$43
-	db	$23
-; P3-41
-	db	$23
-	db	$13
-	db	$e4,$b3
-	db	$e3,$23
-; P3-42
-	db	$43
-	db	$63
-	db	$83
-	db	$b3
-; P3-43
-	db	$e5,$95
-	db	$e4,$11
-	db	$47
-; P3-44
-	db	$e5,$b5
-	db	$e4,$21
-	db	$75
-	db	$60
-	db	$50
-; P3-45
-	db	$47
-	db	$40
-	db	$c0
-	db	$40
-	db	$c0
-	db	$d8,$14
-	db	$40
-	db	$c0
-	db	$40
-	db	$c0
-	db	$30
-	db	$c0
-; P3-46
-	db	$dc,$14
-	db	$20
-	db	$c2
-	db	$e5,$b0
-	db	$c2
-	db	$d8,$14
-	db	$b0
-	db	$c0
-	db	$b0
-	db	$c0
-	db	$b0
-	db	$c0
-	db	$e4,$20
-	db	$c0
-	db	$20
-	db	$c0
-	db	$30
-	db	$c0
-; P3-47
-	db	$dc,$14
-	db	$40
-	db	$c6
-	db	$dc,$11
-	db	$e7,$95
-	db	$c1
-; P3-48
-	db	$c0
-	db	$ff
+	vibrato 14, 2, 1
+	note_type 12, 1, 1
+	octave 4
+	note E_, 1
+	rest 1
+	note A_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note A_, 1
+	rest 1
+	note B_, 1
+	rest 1
+	note A_, 1
+	rest 1
+	note G#, 1
+	rest 1
+	note F#, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note B_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note B_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note B_, 1
+	rest 1
+	octave 5
+	note E_, 1
+	rest 1
+	octave 4
+	note B_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note A_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note A_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note A_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note A_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note B_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note B_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note B_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note B_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note B_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note B_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	octave 3
+	note B_, 1
+	rest 1
+	octave 4
+	note E_, 1
+	rest 1
+	note B_, 1
+	rest 1
+	note D_, 1
+	rest 1
+	note A_, 1
+	rest 1
+	note D_, 1
+	rest 1
+	note A_, 1
+	rest 1
+	note D_, 1
+	rest 1
+	note A_, 1
+	rest 1
+	note D_, 1
+	rest 1
+	note A_, 1
+	rest 1
+	note D_, 1
+	rest 1
+	note A_, 1
+	rest 1
+	note D_, 1
+	rest 1
+	note A_, 1
+	rest 1
+	note D_, 1
+	rest 1
+	note A_, 1
+	rest 1
+	note B_, 1
+	rest 1
+	note A_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note A_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note C#, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note A_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note A_, 1
+	rest 1
+	note F#, 1
+	rest 1
+	note B_, 1
+	rest 1
+	note F#, 1
+	rest 1
+	note B_, 1
+	rest 1
+	note F#, 1
+	rest 1
+	note B_, 1
+	rest 1
+	note F#, 1
+	rest 1
+	note B_, 1
+	rest 1
+	note G#, 1
+	rest 1
+	note B_, 1
+	rest 1
+	note G#, 1
+	rest 1
+	note B_, 1
+	rest 1
+	note G#, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note F#, 1
+	rest 1
+	note G#, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note A_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note A_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note A_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note A_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note B_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note B_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note B_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note B_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note B_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note B_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	octave 3
+	note B_, 1
+	rest 1
+	octave 4
+	note E_, 1
+	rest 1
+	note B_, 1
+	rest 1
+	note D_, 1
+	rest 1
+	note A_, 1
+	rest 1
+	note D_, 1
+	rest 1
+	note A_, 1
+	rest 1
+	note D_, 1
+	rest 1
+	note A_, 1
+	rest 1
+	note D_, 1
+	rest 1
+	note A_, 1
+	rest 1
+	note D_, 1
+	rest 1
+	note A_, 1
+	rest 1
+	note D_, 1
+	rest 1
+	note A_, 1
+	rest 1
+	note D_, 1
+	rest 1
+	note A_, 1
+	rest 1
+	note B_, 1
+	rest 1
+	note A_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note A_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note C#, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note A_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note A_, 1
+	rest 1
+	note F#, 1
+	rest 1
+	note B_, 1
+	rest 1
+	note F#, 1
+	rest 1
+	note B_, 1
+	rest 1
+	note F#, 1
+	rest 1
+	note B_, 1
+	rest 1
+	note F#, 1
+	rest 1
+	note B_, 1
+	rest 1
+	note G#, 1
+	rest 1
+	note B_, 1
+	rest 1
+	note G#, 1
+	rest 1
+	note B_, 1
+	rest 1
+	note G#, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note C#, 1
+	rest 1
+	note A_, 1
+	rest 1
+	note D_, 1
+	rest 1
+	note A_, 1
+	rest 1
+	note D_, 1
+	rest 1
+	note A_, 1
+	rest 1
+	note D_, 1
+	rest 1
+	note A_, 1
+	rest 1
+	note D_, 1
+	rest 1
+	note A_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note B_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note B_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note B_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note B_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note B_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note B_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note B_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note B_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note A_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note A_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note A_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note A_, 1
+	rest 1
+	note D_, 1
+	rest 1
+	note A_, 1
+	rest 1
+	note D_, 1
+	rest 1
+	note A_, 1
+	rest 1
+	note D_, 1
+	rest 1
+	note A_, 1
+	rest 1
+	note D_, 1
+	rest 1
+	note A_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note B_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note B_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note B_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note B_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note B_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note B_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note B_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note B_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note A_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note A_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note A_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note A_, 1
+	rest 1
+	note D_, 1
+	rest 1
+	note A_, 1
+	rest 1
+	note D_, 1
+	rest 1
+	note A_, 1
+	rest 1
+	note D_, 1
+	rest 1
+	note A_, 1
+	rest 1
+	note D_, 1
+	rest 1
+	note A_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note B_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note B_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note B_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note B_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note B_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note B_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note B_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note B_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note A_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note A_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note A_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note A_, 1
+	rest 1
+	note D_, 1
+	rest 1
+	note A_, 1
+	rest 1
+	note D_, 1
+	rest 1
+	note A_, 1
+	rest 1
+	note D_, 1
+	rest 1
+	note A_, 1
+	rest 1
+	note D_, 1
+	rest 1
+	note A_, 1
+	rest 1
+	note F#, 1
+	rest 1
+	note B_, 1
+	rest 1
+	note F#, 1
+	rest 1
+	note B_, 1
+	rest 1
+	note F#, 1
+	rest 1
+	note B_, 1
+	rest 1
+	note F#, 1
+	rest 1
+	note B_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note B_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note B_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note B_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note B_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note B_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note B_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note B_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note B_, 1
+	rest 1
+	note A_, 1
+	rest 3
+	note_type 12, 2, 4
+	note C#, 4
+	note D_, 4
+	note D#, 4
+	note E_, 4
+	note G#, 4
+	octave 5
+	note E_, 4
+	note D_, 4
+	note D_, 4
+	note C#, 4
+	note C#, 4
+	octave 4
+	note B_, 4
+	note B_, 4
+	note A_, 4
+	note G#, 4
+	note B_, 4
+	rest 4
+	note_type 12, 1, 4
+	note C#, 4
+	note D_, 4
+	note D#, 4
+	note E_, 4
+	note G#, 4
+	octave 5
+	note E_, 4
+	note D_, 4
+	note D_, 4
+	note C#, 4
+	octave 4
+	note B_, 4
+	octave 5
+	note D_, 4
+	note E_, 4
+	note F#, 4
+	note G#, 4
+	note B_, 4
+	octave 3
+	note A_, 6
+	octave 4
+	note C#, 2
+	note E_, 8
+	octave 3
+	note B_, 6
+	octave 4
+	note D_, 2
+	note G_, 6
+	note F#, 1
+	note F_, 1
+	note E_, 8
+	note E_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note_type 8, 1, 4
+	note E_, 1
+	rest 1
+	note E_, 1
+	rest 1
+	note D#, 1
+	rest 1
+	note_type 12, 1, 4
+	note D_, 1
+	rest 3
+	octave 3
+	note B_, 1
+	rest 3
+	note_type 8, 1, 4
+	note B_, 1
+	rest 1
+	note B_, 1
+	rest 1
+	note B_, 1
+	rest 1
+	octave 4
+	note D_, 1
+	rest 1
+	note D_, 1
+	rest 1
+	note D#, 1
+	rest 1
+	note_type 12, 1, 4
+	note E_, 1
+	rest 7
+	note_type 12, 1, 1
+	octave 1
+	note A_, 6
+	rest 2
+	rest 1
+	sound_ret
