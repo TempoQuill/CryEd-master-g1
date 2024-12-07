@@ -159,22 +159,22 @@ Music_CinnabarMansion_Ch4::
 	rest 16
 
 Music_CinnabarMansion_branch_7edb5::
-	drum_note 7 + 5, 2
-	drum_note 7 + 5, 2
-	drum_note 7 + 6, 4
-	drum_note 7 + 5, 2
-	drum_note 7 + 5, 2
-	drum_note 7 + 6, 4
-	drum_note 7 + 5, 2
-	drum_note 7 + 5, 2
-	drum_note 7 + 6, 4
-	drum_note 7 + 5, 2
-	drum_note 7 + 5, 2
-	drum_note 7 + 7, 4
-	drum_note 7 + 5, 2
-	drum_note 7 + 5, 2
+	drum_note 12, 2
+	drum_note 12, 2
+	drum_note 13, 4
+	drum_note 12, 2
+	drum_note 12, 2
+	drum_note 13, 4
+	drum_note 12, 2
+	drum_note 12, 2
+	drum_note 13, 4
+	drum_note 12, 2
+	drum_note 12, 2
+	drum_note 14, 4
+	drum_note 12, 2
+	drum_note 12, 2
 	rest 2
 	rest 10
 	rest 8
-	drum_note 7 + 7, 8
+	drum_note 14, 8
 	sound_loop 0, Music_CinnabarMansion_branch_7edb5

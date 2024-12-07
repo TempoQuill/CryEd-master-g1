@@ -235,18 +235,18 @@ Music_IndigoPlateau_branch_a6fe::
 
 Music_IndigoPlateau_Ch4::
 	drum_speed 6
-	drum_note 7 + 10, 16
-	drum_note 7 + 10, 16
-	drum_note 7 + 10, 16
-	drum_note 7 + 10, 8
-	drum_note 7 + 12, 1
-	drum_note 7 + 12, 1
-	drum_note 7 + 12, 1
-	drum_note 7 + 12, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 11, 1
+	drum_note 17, 16
+	drum_note 17, 16
+	drum_note 17, 16
+	drum_note 17, 8
+	drum_note 19, 1
+	drum_note 19, 1
+	drum_note 19, 1
+	drum_note 19, 1
+	drum_note 18, 1
+	drum_note 18, 1
+	drum_note 18, 1
+	drum_note 18, 1
 
 Music_IndigoPlateau_branch_a728::
 	sound_call Music_IndigoPlateau_branch_a791
@@ -263,67 +263,67 @@ Music_IndigoPlateau_branch_a728::
 	sound_call Music_IndigoPlateau_branch_a7a8
 	sound_call Music_IndigoPlateau_branch_a77e
 	sound_call Music_IndigoPlateau_branch_a7a8
-	drum_note 7 + 10, 16
-	drum_note 7 + 10, 8
-	drum_note 7 + 11, 8
-	drum_note 7 + 10, 16
-	drum_note 7 + 12, 1
-	drum_note 7 + 12, 1
-	drum_note 7 + 12, 1
-	drum_note 7 + 12, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 12, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 12, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 10, 1
-	drum_note 7 + 10, 1
-	drum_note 7 + 10, 1
-	drum_note 7 + 10, 1
+	drum_note 17, 16
+	drum_note 17, 8
+	drum_note 18, 8
+	drum_note 17, 16
+	drum_note 19, 1
+	drum_note 19, 1
+	drum_note 19, 1
+	drum_note 19, 1
+	drum_note 18, 1
+	drum_note 19, 1
+	drum_note 18, 1
+	drum_note 19, 1
+	drum_note 18, 1
+	drum_note 18, 1
+	drum_note 18, 1
+	drum_note 18, 1
+	drum_note 17, 1
+	drum_note 17, 1
+	drum_note 17, 1
+	drum_note 17, 1
 	sound_loop 0, Music_IndigoPlateau_branch_a728
 
 Music_IndigoPlateau_branch_a77e::
-	drum_note 7 + 10, 4
-	drum_note 7 + 11, 4
-	drum_note 7 + 12, 4
-	drum_note 7 + 11, 4
-	drum_note 7 + 10, 4
-	drum_note 7 + 11, 4
-	drum_note 7 + 12, 4
-	drum_note 7 + 12, 2
-	drum_note 7 + 11, 2
+	drum_note 17, 4
+	drum_note 18, 4
+	drum_note 19, 4
+	drum_note 18, 4
+	drum_note 17, 4
+	drum_note 18, 4
+	drum_note 19, 4
+	drum_note 19, 2
+	drum_note 18, 2
 	sound_ret
 
 Music_IndigoPlateau_branch_a791::
-	drum_note 7 + 10, 4
-	drum_note 7 + 11, 4
-	drum_note 7 + 12, 4
-	drum_note 7 + 11, 4
-	drum_note 7 + 10, 4
-	drum_note 7 + 11, 4
-	drum_note 7 + 12, 4
-	drum_note 7 + 12, 1
-	drum_note 7 + 12, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 11, 1
+	drum_note 17, 4
+	drum_note 18, 4
+	drum_note 19, 4
+	drum_note 18, 4
+	drum_note 17, 4
+	drum_note 18, 4
+	drum_note 19, 4
+	drum_note 19, 1
+	drum_note 19, 1
+	drum_note 18, 1
+	drum_note 18, 1
 	sound_ret
 
 Music_IndigoPlateau_branch_a7a8::
-	drum_note 7 + 10, 4
-	drum_note 7 + 11, 4
-	drum_note 7 + 10, 4
-	drum_note 7 + 11, 4
-	drum_note 7 + 10, 4
-	drum_note 7 + 10, 4
-	drum_note 7 + 12, 1
-	drum_note 7 + 12, 1
-	drum_note 7 + 12, 1
-	drum_note 7 + 12, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 11, 1
+	drum_note 17, 4
+	drum_note 18, 4
+	drum_note 17, 4
+	drum_note 18, 4
+	drum_note 17, 4
+	drum_note 17, 4
+	drum_note 19, 1
+	drum_note 19, 1
+	drum_note 19, 1
+	drum_note 19, 1
+	drum_note 18, 1
+	drum_note 18, 1
+	drum_note 18, 1
+	drum_note 18, 1
 	sound_ret

@@ -473,12 +473,12 @@ Music_RuinsOfAlph_Ch3:
 Music_RuinsOfAlph_Ch4:
 	drum_speed 12
 .mainloop:
-	drum_note 7 + 5, 4
-	drum_note 7 + 6, 4
-	drum_note 7 + 9, 4
+	drum_note 12, 4
+	drum_note 13, 4
+	drum_note 16, 4
 	rest 8
-	drum_note 7 + 5, 4
-	drum_note 7 + 6, 4
-	drum_note 7 + 9, 4
+	drum_note 12, 4
+	drum_note 13, 4
+	drum_note 16, 4
 	rest 8
 	sound_loop 0, .mainloop

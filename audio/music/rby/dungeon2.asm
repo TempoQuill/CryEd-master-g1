@@ -314,12 +314,12 @@ Music_Dungeon2_Ch4::
 	drum_speed 12
 
 Music_Dungeon2_branch_7e9dd::
-	drum_note 7 + 5, 4
-	drum_note 7 + 6, 4
-	drum_note 7 + 5, 4
-	drum_note 7 + 3, 4
-	drum_note 7 + 5, 4
-	drum_note 7 + 6, 4
-	drum_note 7 + 4, 4
-	drum_note 7 + 2, 4
+	drum_note 12, 4
+	drum_note 13, 4
+	drum_note 12, 4
+	drum_note 10, 4
+	drum_note 12, 4
+	drum_note 13, 4
+	drum_note 11, 4
+	drum_note 9, 4
 	sound_loop 0, Music_Dungeon2_branch_7e9dd

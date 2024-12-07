@@ -323,19 +323,19 @@ Music_CherrygroveCity_Ch3:
 Music_CherrygroveCity_Ch4:
 	drum_speed 12
 	rest 8
-	drum_note 7 + 6, 4
-	drum_note 7 + 10, 2
-	drum_note 7 + 10, 2
+	drum_note 13, 4
+	drum_note 17, 2
+	drum_note 17, 2
 .mainloop:
-	drum_note 7 + 10, 4
-	drum_note 7 + 6, 2
-	drum_note 7 + 10, 4
-	drum_note 7 + 9, 2
-	drum_note 7 + 10, 4
-	drum_note 7 + 10, 4
-	drum_note 7 + 5, 2
-	drum_note 7 + 12, 2
-	drum_note 7 + 10, 2
-	drum_note 7 + 9, 2
-	drum_note 7 + 6, 4
+	drum_note 17, 4
+	drum_note 13, 2
+	drum_note 17, 4
+	drum_note 16, 2
+	drum_note 17, 4
+	drum_note 17, 4
+	drum_note 12, 2
+	drum_note 19, 2
+	drum_note 17, 2
+	drum_note 16, 2
+	drum_note 13, 4
 	sound_loop 0, .mainloop

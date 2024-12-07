@@ -679,34 +679,34 @@ Music_BikeRiding_branch_7de6a::
 
 Music_BikeRiding_branch_7dea7::
 	rest 2
-	drum_note 7 + 9, 2
+	drum_note 16, 2
 	rest 2
-	drum_note 7 + 9, 2
+	drum_note 16, 2
 	rest 2
-	drum_note 7 + 9, 2
+	drum_note 16, 2
 	rest 2
-	drum_note 7 + 9, 2
+	drum_note 16, 2
 	sound_ret
 
 Music_BikeRiding_branch_7deb4::
 	rest 2
-	drum_note 7 + 9, 2
+	drum_note 16, 2
 	rest 2
-	drum_note 7 + 9, 2
+	drum_note 16, 2
 	rest 2
-	drum_note 7 + 9, 2
-	drum_note 7 + 9, 2
-	drum_note 7 + 9, 2
+	drum_note 16, 2
+	drum_note 16, 2
+	drum_note 16, 2
 	sound_ret
 
 Music_BikeRiding_branch_7dec2::
 	rest 2
-	drum_note 7 + 9, 2
+	drum_note 16, 2
 	rest 2
-	drum_note 7 + 9, 2
+	drum_note 16, 2
 	rest 2
-	drum_note 7 + 9, 2
+	drum_note 16, 2
 	rest 2
-	drum_note 7 + 9, 1
-	drum_note 7 + 9, 1
+	drum_note 16, 1
+	drum_note 16, 1
 	sound_ret

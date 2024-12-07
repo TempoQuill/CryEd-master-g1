@@ -278,68 +278,68 @@ Music_MuseumGuy_Ch4::
 	rest 16
 	rest 14
 	drum_speed 6
-	drum_note 7 + 12, 1
-	drum_note 7 + 12, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 11, 1
+	drum_note 19, 1
+	drum_note 19, 1
+	drum_note 18, 1
+	drum_note 18, 1
 
 Music_MuseumGuy_branch_aee1::
-	drum_note 7 + 10, 4
-	drum_note 7 + 10, 6
-	drum_note 7 + 10, 2
-	drum_note 7 + 10, 2
-	drum_note 7 + 10, 2
-	drum_note 7 + 10, 4
-	drum_note 7 + 10, 2
-	drum_note 7 + 12, 1
-	drum_note 7 + 12, 1
-	drum_note 7 + 10, 6
-	drum_note 7 + 12, 1
-	drum_note 7 + 12, 1
-	drum_note 7 + 10, 4
-	drum_note 7 + 10, 6
-	drum_note 7 + 10, 2
-	drum_note 7 + 11, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 10, 2
-	drum_note 7 + 10, 2
-	drum_note 7 + 10, 2
-	drum_note 7 + 12, 1
-	drum_note 7 + 12, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 10, 6
-	drum_note 7 + 10, 2
-	drum_note 7 + 10, 4
-	drum_note 7 + 10, 4
-	drum_note 7 + 12, 1
-	drum_note 7 + 12, 1
-	drum_note 7 + 10, 2
-	drum_note 7 + 11, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 10, 2
-	drum_note 7 + 10, 4
-	drum_note 7 + 10, 4
-	drum_note 7 + 10, 2
-	drum_note 7 + 12, 1
-	drum_note 7 + 12, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 10, 2
-	drum_note 7 + 10, 2
-	drum_note 7 + 10, 4
-	drum_note 7 + 10, 2
-	drum_note 7 + 12, 1
-	drum_note 7 + 12, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 10, 6
-	drum_note 7 + 12, 1
-	drum_note 7 + 12, 1
-	drum_note 7 + 10, 4
-	drum_note 7 + 10, 4
-	drum_note 7 + 12, 1
-	drum_note 7 + 12, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 11, 1
+	drum_note 17, 4
+	drum_note 17, 6
+	drum_note 17, 2
+	drum_note 17, 2
+	drum_note 17, 2
+	drum_note 17, 4
+	drum_note 17, 2
+	drum_note 19, 1
+	drum_note 19, 1
+	drum_note 17, 6
+	drum_note 19, 1
+	drum_note 19, 1
+	drum_note 17, 4
+	drum_note 17, 6
+	drum_note 17, 2
+	drum_note 18, 1
+	drum_note 18, 1
+	drum_note 17, 2
+	drum_note 17, 2
+	drum_note 17, 2
+	drum_note 19, 1
+	drum_note 19, 1
+	drum_note 18, 1
+	drum_note 18, 1
+	drum_note 17, 6
+	drum_note 17, 2
+	drum_note 17, 4
+	drum_note 17, 4
+	drum_note 19, 1
+	drum_note 19, 1
+	drum_note 17, 2
+	drum_note 18, 1
+	drum_note 18, 1
+	drum_note 17, 2
+	drum_note 17, 4
+	drum_note 17, 4
+	drum_note 17, 2
+	drum_note 19, 1
+	drum_note 19, 1
+	drum_note 18, 1
+	drum_note 18, 1
+	drum_note 17, 2
+	drum_note 17, 2
+	drum_note 17, 4
+	drum_note 17, 2
+	drum_note 19, 1
+	drum_note 19, 1
+	drum_note 18, 1
+	drum_note 18, 1
+	drum_note 17, 6
+	drum_note 19, 1
+	drum_note 19, 1
+	drum_note 17, 4
+	drum_note 17, 4
+	drum_note 19, 1
+	drum_note 19, 1
+	drum_note 18, 1
+	drum_note 18, 1
 	sound_loop 0, Music_MuseumGuy_branch_aee1

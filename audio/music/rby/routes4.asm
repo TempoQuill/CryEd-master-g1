@@ -518,172 +518,172 @@ Music_Routes4_Ch4::
 	drum_speed 12
 	rest 16
 	rest 12
-	drum_note 7 + 12, 1
-	drum_note 7 + 12, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 11, 1
+	drum_note 19, 1
+	drum_note 19, 1
+	drum_note 18, 1
+	drum_note 18, 1
 
 Music_Routes4_branch_a4a8::
-	drum_note 7 + 10, 4
-	drum_note 7 + 12, 1
-	drum_note 7 + 12, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 10, 2
-	drum_note 7 + 11, 2
-	drum_note 7 + 12, 1
-	drum_note 7 + 12, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 10, 4
-	drum_note 7 + 12, 1
-	drum_note 7 + 12, 1
-	drum_note 7 + 12, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 10, 4
-	drum_note 7 + 10, 2
-	drum_note 7 + 10, 4
-	drum_note 7 + 12, 1
-	drum_note 7 + 12, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 10, 2
-	drum_note 7 + 10, 2
-	drum_note 7 + 10, 2
-	drum_note 7 + 12, 1
-	drum_note 7 + 12, 1
-	drum_note 7 + 10, 4
-	drum_note 7 + 12, 1
-	drum_note 7 + 12, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 10, 2
-	drum_note 7 + 10, 2
-	drum_note 7 + 11, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 12, 1
-	drum_note 7 + 12, 1
-	drum_note 7 + 10, 4
-	drum_note 7 + 12, 1
-	drum_note 7 + 12, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 10, 2
-	drum_note 7 + 10, 2
-	drum_note 7 + 12, 1
-	drum_note 7 + 12, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 10, 4
-	drum_note 7 + 12, 1
-	drum_note 7 + 12, 1
-	drum_note 7 + 12, 1
-	drum_note 7 + 12, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 10, 4
-	drum_note 7 + 10, 2
-	drum_note 7 + 10, 4
-	drum_note 7 + 12, 1
-	drum_note 7 + 12, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 10, 2
-	drum_note 7 + 10, 2
-	drum_note 7 + 10, 2
-	drum_note 7 + 12, 1
-	drum_note 7 + 12, 1
-	drum_note 7 + 10, 4
-	drum_note 7 + 12, 1
-	drum_note 7 + 12, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 10, 2
-	drum_note 7 + 10, 2
-	drum_note 7 + 12, 1
-	drum_note 7 + 12, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 10, 4
-	drum_note 7 + 12, 1
-	drum_note 7 + 12, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 10, 2
-	drum_note 7 + 10, 2
-	drum_note 7 + 12, 1
-	drum_note 7 + 12, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 10, 4
-	drum_note 7 + 12, 1
-	drum_note 7 + 12, 1
-	drum_note 7 + 12, 1
-	drum_note 7 + 12, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 10, 4
-	drum_note 7 + 10, 2
-	drum_note 7 + 10, 4
-	drum_note 7 + 12, 1
-	drum_note 7 + 12, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 10, 2
-	drum_note 7 + 10, 2
-	drum_note 7 + 10, 2
-	drum_note 7 + 12, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 10, 4
-	drum_note 7 + 12, 1
-	drum_note 7 + 12, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 10, 2
-	drum_note 7 + 10, 2
-	drum_note 7 + 12, 1
-	drum_note 7 + 12, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 10, 4
-	drum_note 7 + 12, 1
-	drum_note 7 + 12, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 10, 2
-	drum_note 7 + 10, 2
-	drum_note 7 + 12, 1
-	drum_note 7 + 12, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 10, 4
-	drum_note 7 + 12, 1
-	drum_note 7 + 12, 1
-	drum_note 7 + 12, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 10, 4
-	drum_note 7 + 10, 2
-	drum_note 7 + 10, 4
-	drum_note 7 + 12, 1
-	drum_note 7 + 12, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 10, 2
-	drum_note 7 + 10, 2
-	drum_note 7 + 10, 2
-	drum_note 7 + 12, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 10, 4
-	drum_note 7 + 12, 1
-	drum_note 7 + 12, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 11, 1
-	drum_note 7 + 10, 2
-	drum_note 7 + 10, 2
-	drum_note 7 + 10, 2
-	drum_note 7 + 10, 2
+	drum_note 17, 4
+	drum_note 19, 1
+	drum_note 19, 1
+	drum_note 18, 1
+	drum_note 18, 1
+	drum_note 17, 2
+	drum_note 18, 2
+	drum_note 19, 1
+	drum_note 19, 1
+	drum_note 18, 1
+	drum_note 18, 1
+	drum_note 17, 4
+	drum_note 19, 1
+	drum_note 19, 1
+	drum_note 19, 1
+	drum_note 18, 1
+	drum_note 18, 1
+	drum_note 18, 1
+	drum_note 17, 4
+	drum_note 17, 2
+	drum_note 17, 4
+	drum_note 19, 1
+	drum_note 19, 1
+	drum_note 18, 1
+	drum_note 18, 1
+	drum_note 17, 2
+	drum_note 17, 2
+	drum_note 17, 2
+	drum_note 19, 1
+	drum_note 19, 1
+	drum_note 17, 4
+	drum_note 19, 1
+	drum_note 19, 1
+	drum_note 18, 1
+	drum_note 18, 1
+	drum_note 17, 2
+	drum_note 17, 2
+	drum_note 18, 1
+	drum_note 18, 1
+	drum_note 19, 1
+	drum_note 19, 1
+	drum_note 17, 4
+	drum_note 19, 1
+	drum_note 19, 1
+	drum_note 18, 1
+	drum_note 18, 1
+	drum_note 17, 2
+	drum_note 17, 2
+	drum_note 19, 1
+	drum_note 19, 1
+	drum_note 18, 1
+	drum_note 18, 1
+	drum_note 17, 4
+	drum_note 19, 1
+	drum_note 19, 1
+	drum_note 19, 1
+	drum_note 19, 1
+	drum_note 18, 1
+	drum_note 18, 1
+	drum_note 17, 4
+	drum_note 17, 2
+	drum_note 17, 4
+	drum_note 19, 1
+	drum_note 19, 1
+	drum_note 18, 1
+	drum_note 18, 1
+	drum_note 17, 2
+	drum_note 17, 2
+	drum_note 17, 2
+	drum_note 19, 1
+	drum_note 19, 1
+	drum_note 17, 4
+	drum_note 19, 1
+	drum_note 19, 1
+	drum_note 18, 1
+	drum_note 18, 1
+	drum_note 17, 2
+	drum_note 17, 2
+	drum_note 19, 1
+	drum_note 19, 1
+	drum_note 18, 1
+	drum_note 18, 1
+	drum_note 17, 4
+	drum_note 19, 1
+	drum_note 19, 1
+	drum_note 18, 1
+	drum_note 18, 1
+	drum_note 17, 2
+	drum_note 17, 2
+	drum_note 19, 1
+	drum_note 19, 1
+	drum_note 18, 1
+	drum_note 18, 1
+	drum_note 17, 4
+	drum_note 19, 1
+	drum_note 19, 1
+	drum_note 19, 1
+	drum_note 19, 1
+	drum_note 18, 1
+	drum_note 18, 1
+	drum_note 17, 4
+	drum_note 17, 2
+	drum_note 17, 4
+	drum_note 19, 1
+	drum_note 19, 1
+	drum_note 18, 1
+	drum_note 18, 1
+	drum_note 17, 2
+	drum_note 17, 2
+	drum_note 17, 2
+	drum_note 19, 1
+	drum_note 18, 1
+	drum_note 17, 4
+	drum_note 19, 1
+	drum_note 19, 1
+	drum_note 18, 1
+	drum_note 18, 1
+	drum_note 17, 2
+	drum_note 17, 2
+	drum_note 19, 1
+	drum_note 19, 1
+	drum_note 18, 1
+	drum_note 18, 1
+	drum_note 17, 4
+	drum_note 19, 1
+	drum_note 19, 1
+	drum_note 18, 1
+	drum_note 18, 1
+	drum_note 17, 2
+	drum_note 17, 2
+	drum_note 19, 1
+	drum_note 19, 1
+	drum_note 18, 1
+	drum_note 18, 1
+	drum_note 17, 4
+	drum_note 19, 1
+	drum_note 19, 1
+	drum_note 19, 1
+	drum_note 18, 1
+	drum_note 18, 1
+	drum_note 18, 1
+	drum_note 17, 4
+	drum_note 17, 2
+	drum_note 17, 4
+	drum_note 19, 1
+	drum_note 19, 1
+	drum_note 18, 1
+	drum_note 18, 1
+	drum_note 17, 2
+	drum_note 17, 2
+	drum_note 17, 2
+	drum_note 19, 1
+	drum_note 18, 1
+	drum_note 17, 4
+	drum_note 19, 1
+	drum_note 19, 1
+	drum_note 18, 1
+	drum_note 18, 1
+	drum_note 17, 2
+	drum_note 17, 2
+	drum_note 17, 2
+	drum_note 17, 2
 	sound_loop 0, Music_Routes4_branch_a4a8
