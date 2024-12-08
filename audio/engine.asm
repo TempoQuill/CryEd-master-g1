@@ -746,20 +746,17 @@ LoadNote:
 	inc hl
 	ld d, [hl]
 	; get direction of pitch slide
-	ld hl, CHANNEL_PITCH_SLIDE_TARGET
-	add hl, bc
+	bc_offset CHANNEL_PITCH_SLIDE_TARGET
 	ld a, e
 	sub [hl]
 	ld e, a
 	ld a, d
 	sbc 0
 	ld d, a
-	ld hl, CHANNEL_PITCH_SLIDE_TARGET + 1
-	add hl, bc
+	bc_offset CHANNEL_PITCH_SLIDE_TARGET + 1
 	sub [hl]
 	jr nc, .greater_than
-	ld hl, CHANNEL_FLAGS3
-	add hl, bc
+	bc_offset CHANNEL_FLAGS3
 	set SOUND_PITCH_SLIDE_DIR, [hl]
 	; get frequency
 	bc_offset CHANNEL_FREQUENCY
@@ -767,8 +764,7 @@ LoadNote:
 	inc hl
 	ld d, [hl]
 	; ????
-	ld hl, CHANNEL_PITCH_SLIDE_TARGET
-	add hl, bc
+	bc_offset CHANNEL_PITCH_SLIDE_TARGET
 	ld a, [hl]
 	sub e
 	ld e, a
@@ -776,16 +772,14 @@ LoadNote:
 	sbc 0
 	ld d, a
 	; ????
-	ld hl, CHANNEL_PITCH_SLIDE_TARGET + 1
-	add hl, bc
+	bc_offset CHANNEL_PITCH_SLIDE_TARGET + 1
 	ld a, [hl]
 	sub d
 	ld d, a
 	jr .resume
 
 .greater_than
-	ld hl, CHANNEL_FLAGS3
-	add hl, bc
+	bc_offset CHANNEL_FLAGS3
 	res SOUND_PITCH_SLIDE_DIR, [hl]
 	; get frequency
 	bc_offset CHANNEL_FREQUENCY
@@ -793,16 +787,14 @@ LoadNote:
 	inc hl
 	ld d, [hl]
 	; get distance from pitch slide target
-	ld hl, CHANNEL_PITCH_SLIDE_TARGET
-	add hl, bc
+	bc_offset CHANNEL_PITCH_SLIDE_TARGET
 	ld a, e
 	sub [hl]
 	ld e, a
 	ld a, d
 	sbc 0
 	ld d, a
-	ld hl, CHANNEL_PITCH_SLIDE_TARGET + 1
-	add hl, bc
+	bc_offset CHANNEL_PITCH_SLIDE_TARGET + 1
 	sub [hl]
 	ld d, a
 .resume
@@ -829,14 +821,11 @@ LoadNote:
 	add [hl]
 	ld d, b ; quotient
 	pop bc
-	ld hl, CHANNEL_PITCH_SLIDE_AMOUNT
-	add hl, bc
+	bc_offset CHANNEL_PITCH_SLIDE_AMOUNT
 	ld [hl], d ; quotient
-	ld hl, CHANNEL_PITCH_SLIDE_AMOUNT_FRACTION
-	add hl, bc
+	bc_offset CHANNEL_PITCH_SLIDE_AMOUNT_FRACTION
 	ld [hl], a ; remainder
-	ld hl, CHANNEL_FIELD25
-	add hl, bc
+	bc_offset CHANNEL_PITCH_SLIDE_TEMPO
 	xor a
 	ld [hl], a
 	ret
@@ -846,8 +835,7 @@ HandleTrackVibrato:
 	bc_offset CHANNEL_FLAGS2
 	bit SOUND_DUTY_LOOP, [hl] ; duty cycle looping
 	jr z, .next
-	ld hl, CHANNEL_DUTY_CYCLE_PATTERN
-	add hl, bc
+	bc_offset CHANNEL_DUTY_CYCLE_PATTERN
 	ld a, [hl]
 	rlca
 	rlca
@@ -860,8 +848,7 @@ HandleTrackVibrato:
 	bc_offset CHANNEL_FLAGS2
 	bit SOUND_PITCH_OFFSET, [hl]
 	jr z, .pitch_inc
-	ld hl, CHANNEL_PITCH_OFFSET
-	add hl, bc
+	bc_offset CHANNEL_PITCH_OFFSET
 	ld e, [hl]
 	inc hl
 	ld d, [hl]
@@ -886,8 +873,7 @@ HandleTrackVibrato:
 	ld e, [hl]
 	inc hl
 	ld d, [hl]
-	ld hl, CHANNEL_PITCH_INC_SWITCH
-	add hl, bc
+	bc_offset CHANNEL_PITCH_INC_SWITCH
 	; is the byte active?
 	ld a, [hl]
 	and a
@@ -914,16 +900,14 @@ HandleTrackVibrato:
 	and a
 	jr nz, .subexit
 	; is the extent nonzero?
-	ld hl, CHANNEL_VIBRATO_EXTENT
-	add hl, bc
+	bc_offset CHANNEL_VIBRATO_EXTENT
 	ld a, [hl]
 	and a
 	jr z, .quit
 	; save it for later
 	ld d, a
 	; is it time to toggle vibrato up/down?
-	ld hl, CHANNEL_VIBRATO_RATE
-	add hl, bc
+	bc_offset CHANNEL_VIBRATO_RATE
 	ld a, [hl]
 	and $f ; count
 	jr z, .toggle
@@ -941,8 +925,7 @@ HandleTrackVibrato:
 	ld a, [wCurTrackFrequency]
 	ld e, a
 	; toggle vibrato up/down
-	ld hl, CHANNEL_FLAGS3
-	add hl, bc
+	bc_offset CHANNEL_FLAGS3
 	bit SOUND_VIBRATO_DIR, [hl] ; vibrato up/down
 	jr z, .down
 ; up
@@ -989,13 +972,11 @@ ApplyPitchSlide:
 	inc hl
 	ld d, [hl]
 	; check whether pitch slide is going up or down
-	ld hl, CHANNEL_FLAGS3
-	add hl, bc
+	bc_offset CHANNEL_FLAGS3
 	bit SOUND_PITCH_SLIDE_DIR, [hl]
 	jr z, .decreasing
 	; frequency += [Channel*PitchSlideAmount]
-	ld hl, CHANNEL_PITCH_SLIDE_AMOUNT
-	add hl, bc
+	bc_offset CHANNEL_PITCH_SLIDE_AMOUNT
 	ld l, [hl]
 	ld h, 0
 	add hl, de
@@ -1003,11 +984,9 @@ ApplyPitchSlide:
 	ld e, l
 	; [Channel*Field25] += [Channel*PitchSlideAmountFraction]
 	; if rollover: Frequency += 1
-	ld hl, CHANNEL_PITCH_SLIDE_AMOUNT_FRACTION
-	add hl, bc
+	bc_offset CHANNEL_PITCH_SLIDE_AMOUNT_FRACTION
 	ld a, [hl]
-	ld hl, CHANNEL_FIELD25
-	add hl, bc
+	bc_offset CHANNEL_PITCH_SLIDE_TEMPO
 	add [hl]
 	ld [hl], a
 	; could have done "jr nc, .no_rollover / inc de / .no_rollover"
@@ -1020,14 +999,12 @@ ApplyPitchSlide:
 	; Compare the dw at [Channel*PitchSlideTarget] to de.
 	; If frequency is greater, we're finished.
 	; Otherwise, load the frequency and set two flags.
-	ld hl, CHANNEL_PITCH_SLIDE_TARGET + 1
-	add hl, bc
+	bc_offset CHANNEL_PITCH_SLIDE_TARGET + 1
 	ld a, [hl]
 	cp d
 	jp c, .finished_pitch_slide
 	jr nz, .continue_pitch_slide
-	ld hl, CHANNEL_PITCH_SLIDE_TARGET
-	add hl, bc
+	bc_offset CHANNEL_PITCH_SLIDE_TARGET
 	ld a, [hl]
 	cp e
 	jp c, .finished_pitch_slide
@@ -1036,8 +1013,7 @@ ApplyPitchSlide:
 .decreasing
 	; frequency -= [Channel*PitchSlideAmount]
 	ld a, e
-	ld hl, CHANNEL_PITCH_SLIDE_AMOUNT
-	add hl, bc
+	bc_offset CHANNEL_PITCH_SLIDE_AMOUNT
 	ld e, [hl]
 	sub e
 	ld e, a
@@ -1046,8 +1022,7 @@ ApplyPitchSlide:
 	ld d, a
 	; [Channel*Field25] *= 2
 	; if rollover: Frequency -= 1
-	ld hl, CHANNEL_PITCH_SLIDE_AMOUNT_FRACTION
-	add hl, bc
+	bc_offset CHANNEL_PITCH_SLIDE_AMOUNT_FRACTION
 	ld a, [hl]
 	add a
 	ld [hl], a
@@ -1061,22 +1036,19 @@ ApplyPitchSlide:
 	; Compare the dw at [Channel*PitchSlideTarget] to de.
 	; If frequency is lower, we're finished.
 	; Otherwise, load the frequency and set two flags.
-	ld hl, CHANNEL_PITCH_SLIDE_TARGET + 1
-	add hl, bc
+	bc_offset CHANNEL_PITCH_SLIDE_TARGET + 1
 	ld a, d
 	cp [hl]
 	jr c, .finished_pitch_slide
 	jr nz, .continue_pitch_slide
-	ld hl, CHANNEL_PITCH_SLIDE_TARGET
-	add hl, bc
+	bc_offset CHANNEL_PITCH_SLIDE_TARGET
 	ld a, e
 	cp [hl]
 	jr nc, .continue_pitch_slide
 .finished_pitch_slide
 	bc_offset CHANNEL_FLAGS2
 	res SOUND_PITCH_SLIDE, [hl]
-	ld hl, CHANNEL_FLAGS3
-	add hl, bc
+	bc_offset CHANNEL_FLAGS3
 	res SOUND_PITCH_SLIDE_DIR, [hl]
 	ret
 
@@ -1512,13 +1484,11 @@ Music_Ret:
 	bc_offset CHANNEL_FLAGS1
 	res SOUND_SUBROUTINE, [hl]
 	; copy LastMusicAddress to MusicAddress
-	ld hl, CHANNEL_LAST_MUSIC_ADDRESS
-	add hl, bc
+	bc_offset CHANNEL_LAST_MUSIC_ADDRESS
 	ld e, [hl]
 	inc hl
 	ld d, [hl]
-	ld hl, CHANNEL_MUSIC_ADDRESS
-	add hl, bc
+	bc_offset CHANNEL_MUSIC_ADDRESS
 	ld [hl], e
 	inc hl
 	ld [hl], d
@@ -1534,20 +1504,17 @@ Music_Call:
 	ld d, a
 	push de
 	; copy MusicAddress to LastMusicAddress
-	ld hl, CHANNEL_MUSIC_ADDRESS
-	add hl, bc
+	bc_offset CHANNEL_MUSIC_ADDRESS
 	ld e, [hl]
 	inc hl
 	ld d, [hl]
-	ld hl, CHANNEL_LAST_MUSIC_ADDRESS
-	add hl, bc
+	bc_offset CHANNEL_LAST_MUSIC_ADDRESS
 	ld [hl], e
 	inc hl
 	ld [hl], d
 	; load pointer into MusicAddress
 	pop de
-	ld hl, CHANNEL_MUSIC_ADDRESS
-	add hl, bc
+	bc_offset CHANNEL_MUSIC_ADDRESS
 	ld [hl], e
 	inc hl
 	ld [hl], d
@@ -1574,12 +1541,10 @@ Music_Loop:
 	; initiate loop
 	dec a
 	set SOUND_LOOPING, [hl] ; set loop flag
-	ld hl, CHANNEL_LOOP_COUNT
-	add hl, bc
+	bc_offset CHANNEL_LOOP_COUNT
 	ld [hl], a ; store loop counter
 .checkloop
-	ld hl, CHANNEL_LOOP_COUNT
-	add hl, bc
+	bc_offset CHANNEL_LOOP_COUNT
 	ld a, [hl]
 	and a ; are we done?
 	jr z, .endloop
@@ -1591,8 +1556,7 @@ Music_Loop:
 	call GetMusicByte
 	ld d, a
 	; load new pointer into MusicAddress
-	ld hl, CHANNEL_MUSIC_ADDRESS
-	add hl, bc
+	bc_offset CHANNEL_MUSIC_ADDRESS
 	ld [hl], e
 	inc hl
 	ld [hl], d
@@ -1603,8 +1567,7 @@ Music_Loop:
 	bc_offset CHANNEL_FLAGS1
 	res SOUND_LOOPING, [hl]
 	; skip to next command
-	ld hl, CHANNEL_MUSIC_ADDRESS
-	add hl, bc
+	bc_offset CHANNEL_MUSIC_ADDRESS
 	ld e, [hl]
 	inc hl
 	ld d, [hl]
@@ -1628,8 +1591,7 @@ Music_Vibrato:
 	bc_offset CHANNEL_FLAGS2
 	set SOUND_VIBRATO, [hl]
 	; start at lower frequency (extent is positive)
-	ld hl, CHANNEL_FLAGS3
-	add hl, bc
+	bc_offset CHANNEL_FLAGS3
 	res SOUND_VIBRATO_DIR, [hl]
 	; get delay
 	call GetMusicByte
@@ -1643,8 +1605,7 @@ Music_Vibrato:
 ; this is split into halves only to get added back together at the last second
 	; get extent/rate
 	call GetMusicByte
-	ld hl, CHANNEL_VIBRATO_EXTENT
-	add hl, bc
+	bc_offset CHANNEL_VIBRATO_EXTENT
 	ld d, a
 	; get top nybble
 	and $f0
@@ -1656,8 +1617,7 @@ Music_Vibrato:
 	or e
 	ld [hl], a
 ; update rate
-	ld hl, CHANNEL_VIBRATO_RATE
-	add hl, bc
+	bc_offset CHANNEL_VIBRATO_RATE
 	; get bottom nybble
 	ld a, d
 	and $f
@@ -1687,11 +1647,9 @@ Music_PitchSlide:
 	and $f
 	ld d, a
 	call GetFrequency
-	ld hl, CHANNEL_PITCH_SLIDE_TARGET
-	add hl, bc
+	bc_offset CHANNEL_PITCH_SLIDE_TARGET
 	ld [hl], e
-	ld hl, CHANNEL_PITCH_SLIDE_TARGET + 1
-	add hl, bc
+	bc_offset CHANNEL_PITCH_SLIDE_TARGET + 1
 	ld [hl], d
 	bc_offset CHANNEL_FLAGS2
 	set SOUND_PITCH_SLIDE, [hl]
@@ -1701,8 +1659,7 @@ Music_PerfectPitch:
 ; RSC equivalent to toggle_perfect_pitch
 	bc_offset CHANNEL_FLAGS1
 	set SOUND_PITCH_INC_SWITCH, [hl]
-	ld hl, CHANNEL_PITCH_INC_SWITCH
-	add hl, bc
+	bc_offset CHANNEL_PITCH_INC_SWITCH
 	ld a, [hl]
 	xor TRUE
 	ld [hl], a ; flip bit 0 of CHANNEL_PITCH_INC_SWITCH
@@ -1717,8 +1674,7 @@ Music_DutyCyclePattern:
 	call GetMusicByte
 	rrca
 	rrca
-	ld hl, CHANNEL_DUTY_CYCLE_PATTERN
-	add hl, bc
+	bc_offset CHANNEL_DUTY_CYCLE_PATTERN
 	ld [hl], a
 	; update duty cycle
 	and $c0 ; only uses top 2 bits
@@ -1762,8 +1718,7 @@ Music_NoteType:
 	; note length
 	ld a, [wCurMusicByte]
 	and $f
-	ld hl, CHANNEL_NOTE_LENGTH
-	add hl, bc
+	bc_offset CHANNEL_NOTE_LENGTH
 	ld [hl], a
 	ld a, [wCurChannel]
 	maskbits NUM_MUSIC_CHANS
@@ -1866,18 +1821,15 @@ GetMusicByte:
 ; input: bc = start of current channel
 	push hl
 	push de
-	ld hl, CHANNEL_MUSIC_ADDRESS
-	add hl, bc
+	bc_offset CHANNEL_MUSIC_ADDRESS
 	ld a, [hli]
 	ld e, a
 	ld d, [hl]
-	ld hl, CHANNEL_MUSIC_BANK
-	add hl, bc
+	bc_offset CHANNEL_MUSIC_BANK
 	ld a, [hl]
 	call _LoadMusicByte ; load data into [wCurMusicByte]
 	inc de ; advance to next byte for next time this is called
-	ld hl, CHANNEL_MUSIC_ADDRESS
-	add hl, bc
+	bc_offset CHANNEL_MUSIC_ADDRESS
 	ld a, e
 	ld [hli], a
 	ld [hl], d
@@ -1932,22 +1884,19 @@ SetNoteDuration:
 	inc a
 	ld e, a
 	ld d, 0
-	ld hl, CHANNEL_NOTE_LENGTH
-	add hl, bc
+	bc_offset CHANNEL_NOTE_LENGTH
 	ld a, [hl]
 	; multiply NoteLength by delay units
 	ld l, 0 ; just multiply
 	call .Multiply
 	ld a, l ; low
 	; store Tempo in de
-	ld hl, CHANNEL_TEMPO
-	add hl, bc
+	bc_offset CHANNEL_TEMPO
 	ld e, [hl]
 	inc hl
 	ld d, [hl]
 	; add ???? to the next result
-	ld hl, CHANNEL_NOTE_DURATION + 1
-	add hl, bc
+	bc_offset CHANNEL_NOTE_DURATION + 1
 	ld l, [hl]
 	; multiply Tempo by last result (NoteLength * LOW(delay))
 	call .Multiply
@@ -1955,8 +1904,7 @@ SetNoteDuration:
 	ld e, l
 	ld d, h
 	; store result in ????
-	ld hl, CHANNEL_NOTE_DURATION + 1
-	add hl, bc
+	bc_offset CHANNEL_NOTE_DURATION + 1
 	ld [hl], e
 	; store result in NoteDuration
 	bc_offset CHANNEL_NOTE_DURATION
@@ -2017,15 +1965,13 @@ Tempo:
 ; input:
 ; 	de: note length
 	; update Tempo
-	ld hl, CHANNEL_TEMPO
-	add hl, bc
+	bc_offset CHANNEL_TEMPO
 	ld [hl], e
 	inc hl
 	ld [hl], d
 	; clear subdivision sum
 	xor a
-	ld hl, CHANNEL_NOTE_DURATION + 1
-	add hl, bc
+	bc_offset CHANNEL_NOTE_DURATION + 1
 	ld [hl], a
 	ret
 
@@ -2145,8 +2091,7 @@ _PlayCry::
 	bc_offset CHANNEL_FLAGS2
 	set SOUND_PITCH_OFFSET, [hl]
 
-	ld hl, CHANNEL_PITCH_OFFSET
-	add hl, bc
+	bc_offset CHANNEL_PITCH_OFFSET
 	ld a, [wCryPitch]
 	ld [hli], a
 	ld a, [wCryPitch + 1]
@@ -2159,8 +2104,7 @@ _PlayCry::
 	jr nc, .start
 
 ; Tempo is effectively length
-	ld hl, CHANNEL_TEMPO
-	add hl, bc
+	bc_offset CHANNEL_TEMPO
 	ld a, [wCryLength]
 	ld [hli], a
 	ld a, [wCryLength + 1]
@@ -2233,16 +2177,14 @@ _PlaySFX::
 	bc_offset CHANNEL_FLAGS2
 	set SOUND_PITCH_OFFSET, [hl]
 
-	ld hl, CHANNEL_PITCH_OFFSET
-	add hl, bc
+	bc_offset CHANNEL_PITCH_OFFSET
 	ld a, [wSfxPitch]
 	ld [hli], a
 	ld a, [wSfxPitch + 1]
 	ld [hl], a
 
 ; Tempo is effectively length
-	ld hl, CHANNEL_TEMPO
-	add hl, bc
+	bc_offset CHANNEL_TEMPO
 	ld a, [wSfxLength]
 	ld [hli], a
 	ld a, [wSfxLength + 1]
@@ -2279,8 +2221,7 @@ LoadChannel:
 	res SOUND_CHANNEL_ON, [hl] ; channel off
 	call ChannelInit
 	; load music pointer
-	ld hl, CHANNEL_MUSIC_ADDRESS
-	add hl, bc
+	bc_offset CHANNEL_MUSIC_ADDRESS
 	call LoadMusicByte
 	ld [hli], a
 	inc de
@@ -2294,8 +2235,7 @@ LoadChannel:
 	ld a, [wMusicID + 1]
 	ld [hl], a
 	; load music bank
-	ld hl, CHANNEL_MUSIC_BANK
-	add hl, bc
+	bc_offset CHANNEL_MUSIC_BANK
 	ld a, [wMusicBank]
 	ld [hl], a
 	ret
@@ -2308,8 +2248,7 @@ ChannelInit:
 	push de
 	xor a
 	; get channel struct location and length
-	ld hl, CHANNEL_MUSIC_ID ; start
-	add hl, bc
+	bc_offset CHANNEL_MUSIC_ID ; start
 	ld e, CHANNEL_STRUCT_LENGTH ; channel struct length
 	; clear channel
 .loop
@@ -2317,15 +2256,13 @@ ChannelInit:
 	dec e
 	jr nz, .loop
 	; set tempo to default ($100)
-	ld hl, CHANNEL_TEMPO
-	add hl, bc
+	bc_offset CHANNEL_TEMPO
 	xor a
 	ld [hli], a
 	inc a
 	ld [hl], a
 	; set note length to default ($1) (fast)
-	ld hl, CHANNEL_NOTE_LENGTH
-	add hl, bc
+	bc_offset CHANNEL_NOTE_LENGTH
 	ld [hl], a
 	ld a, [wCurChannel]
 	maskbits NUM_MUSIC_CHANS

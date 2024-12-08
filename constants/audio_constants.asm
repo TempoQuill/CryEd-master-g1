@@ -61,17 +61,12 @@ CHANNEL_VIBRATO_RATE                rb
 CHANNEL_PITCH_SLIDE_TARGET          rw
 CHANNEL_PITCH_SLIDE_AMOUNT          rb
 CHANNEL_PITCH_SLIDE_AMOUNT_FRACTION rb
-CHANNEL_FIELD25                     rb
+CHANNEL_PITCH_SLIDE_TEMPO           rb
                                     rb_skip
 CHANNEL_PITCH_OFFSET                rw
-CHANNEL_FIELD29                     rb
-CHANNEL_FIELD2A                     rw
-CHANNEL_FIELD2C                     rb
+                                    rb_skip 4
 CHANNEL_NOTE_LENGTH                 rb
-CHANNEL_FIELD2E                     rb
-CHANNEL_FIELD2F                     rb
-CHANNEL_FIELD30                     rb
-                                    rb_skip
+                                    rb_skip 4
 CHANNEL_STRUCT_LENGTH EQU _RS
 
 NOISE_CHAN_F EQU 2 ; bit set in CHAN5-CHAN7
@@ -92,11 +87,8 @@ NOISE_CHAN_F EQU 2 ; bit set in CHAN5-CHAN7
 	const SOUND_VIBRATO      ; 0
 	const SOUND_PITCH_SLIDE  ; 1
 	const SOUND_DUTY_LOOP    ; 2
-	const SOUND_UNKN_0B      ; 3
+	const_skip
 	const SOUND_PITCH_OFFSET ; 4
-	const SOUND_UNKN_0D      ; 5
-	const SOUND_UNKN_0E      ; 6
-	const SOUND_UNKN_0F      ; 7
 
 ; Flags3
 	const_def
