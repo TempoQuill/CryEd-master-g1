@@ -91,7 +91,7 @@ SongNames:
     db  "                    "
     db  "Violet City         "
     db  "                    "
-    db  "VS. Johto Gyn Leader"
+    db  "VS. Johto Gym Leader"
     db  "(GSC)               "
     db  "VS. Red (GSC)       "
     db  "                    "
