@@ -19,14 +19,14 @@ sys_TimerID:			ds	1
 sys_ImportPos:			ds	2
 
 CryEdit_CryBase:		ds	2
-CryEdit_CryPitch:		ds	2
-CryEdit_CryLength:		ds	2
+CryEdit_CryPitch:		ds	1
+CryEdit_CryLength:		ds	1
 
 SelectedSaveSlot:		ds	1
 CryEdit_SoundEffect:		ds	1
 CryEdit_Music:			ds	2
 
-wCryDisplayData::		ds	6
+wCryDisplayData::		ds	4
 
 wMusicViewerArea::
 wDisplaySquare1::		sq_struct wDisplaySquare1
@@ -107,13 +107,13 @@ wMusicFade::
 wMusicFadeCount:: db
 wMusicFadeID:: dw
 
-	ds 1
+	ds 5
 
-wSfxPitch:: dw
-wSfxLength:: dw
+wSfxPitch:: db
+wSfxLength:: db
 
-wCryPitch:: dw
-wCryLength:: dw
+wCryPitch:: db
+wCryLength:: db
 
 wLastVolume:: db
 wUnusedMusicF9Flag:: db

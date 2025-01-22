@@ -145,12 +145,8 @@ endr
 
 	ld a, [hli]
 	ld [wCryPitch], a
-	ld a, [hli]
-	ld [wCryPitch + 1], a
-	ld a, [hli]
-	ld [wCryLength], a
 	ld a, [hl]
-	ld [wCryLength + 1], a
+	ld [wCryLength], a
 
 	ld a, BANK(_PlayCry)
 	ldh [hROMBank], a
@@ -226,9 +222,6 @@ PlaySFX::
 	ld hl, wSfxPitch
 	xor a
 	ld [hli], a
-	ld [hli], a
-	ld [hli], a
-	inc a
 	ld [hl], a
 	pop hl
 	ldh a, [hROMBank]
@@ -501,4 +494,5 @@ SongsEnd3:
 
 SECTION "Crydata", ROMX, bank[7]
 
+INCLUDE "basenames.asm"
 INCLUDE "crydata.asm"

@@ -1,263 +1,266 @@
 MACRO mon_cry
 ; index, pitch, length
-	dw \1, \2, \3
+	dw \1
+	db \2
+	db $80 ^ \3
 ENDM
 
 PokemonCries::
 ; entries correspond to constants/pokemon_constants.asm
-	mon_cry CRY_BULBASAUR,   $080,  $081 ; BULBASAUR
-	mon_cry CRY_BULBASAUR,   $020,  $100 ; IVYSAUR
-	mon_cry CRY_BULBASAUR,   $000,  $140 ; VENUSAUR
-	mon_cry CRY_CHARMANDER,  $060,  $0c0 ; CHARMANDER
-	mon_cry CRY_CHARMANDER,  $020,  $0c0 ; CHARMELEON
-	mon_cry CRY_CHARMANDER,  $000,  $100 ; CHARIZARD
-	mon_cry CRY_SQUIRTLE,    $060,  $0c0 ; SQUIRTLE
-	mon_cry CRY_SQUIRTLE,    $020,  $0c0 ; WARTORTLE
-	mon_cry CRY_BLASTOISE,   $000,  $100 ; BLASTOISE
-	mon_cry CRY_CATERPIE,    $080,  $0a0 ; CATERPIE
-	mon_cry CRY_METAPOD,     $0cc,  $081 ; METAPOD
-	mon_cry CRY_CATERPIE,    $077,  $0c0 ; BUTTERFREE
-	mon_cry CRY_WEEDLE,      $0ee,  $081 ; WEEDLE
-	mon_cry CRY_BLASTOISE,   $0ff,  $081 ; KAKUNA
-	mon_cry CRY_BLASTOISE,   $060,  $100 ; BEEDRILL
-	mon_cry CRY_PIDGEY,      $0df,  $084 ; PIDGEY
-	mon_cry CRY_PIDGEOTTO,   $028,  $140 ; PIDGEOTTO
-	mon_cry CRY_PIDGEOTTO,   $011,  $17f ; PIDGEOT
-	mon_cry CRY_RATTATA,     $000,  $100 ; RATTATA
-	mon_cry CRY_RATTATA,     $020,  $17f ; RATICATE
-	mon_cry CRY_SPEAROW,     $000,  $100 ; SPEAROW
-	mon_cry CRY_FEAROW,      $040,  $120 ; FEAROW
-	mon_cry CRY_EKANS,       $012,  $0c0 ; EKANS
-	mon_cry CRY_EKANS,       $0e0,  $090 ; ARBOK
-	mon_cry CRY_BULBASAUR,   $0ee,  $081 ; PIKACHU
-	mon_cry CRY_RAICHU,      $0ee,  $088 ; RAICHU
-	mon_cry CRY_NIDORAN_M,   $020,  $0c0 ; SANDSHREW
-	mon_cry CRY_NIDORAN_M,   $0ff,  $17f ; SANDSLASH
-	mon_cry CRY_NIDORAN_F,   $000,  $100 ; NIDORAN_F
-	mon_cry CRY_NIDORAN_F,   $02c,  $160 ; NIDORINA
-	mon_cry CRY_NIDOQUEEN,   $000,  $100 ; NIDOQUEEN
-	mon_cry CRY_NIDORAN_M,   $000,  $100 ; NIDORAN_M
-	mon_cry CRY_NIDORAN_M,   $02c,  $140 ; NIDORINO
-	mon_cry CRY_RAICHU,      $000,  $100 ; NIDOKING
-	mon_cry CRY_CLEFAIRY,    $0cc,  $081 ; CLEFAIRY
-	mon_cry CRY_CLEFAIRY,    $0aa,  $0a0 ; CLEFABLE
-	mon_cry CRY_VULPIX,      $04f,  $090 ; VULPIX
-	mon_cry CRY_VULPIX,      $088,  $0e0 ; NINETALES
-	mon_cry CRY_PIDGEY,      $0ff,  $0b5 ; JIGGLYPUFF
-	mon_cry CRY_PIDGEY,      $068,  $0e0 ; WIGGLYTUFF
-	mon_cry CRY_SQUIRTLE,    $0e0,  $100 ; ZUBAT
-	mon_cry CRY_SQUIRTLE,    $0fa,  $100 ; GOLBAT
-	mon_cry CRY_ODDISH,      $0dd,  $081 ; ODDISH
-	mon_cry CRY_ODDISH,      $0aa,  $0c0 ; GLOOM
-	mon_cry CRY_VILEPLUME,   $022,  $17f ; VILEPLUME
-	mon_cry CRY_PARAS,       $020,  $160 ; PARAS
-	mon_cry CRY_PARAS,       $042,  $17f ; PARASECT
-	mon_cry CRY_VENONAT,     $044,  $0c0 ; VENONAT
-	mon_cry CRY_VENONAT,     $029,  $100 ; VENOMOTH
-	mon_cry CRY_DIGLETT,     $0aa,  $081 ; DIGLETT
-	mon_cry CRY_DIGLETT,     $02a,  $090 ; DUGTRIO
-	mon_cry CRY_CLEFAIRY,    $077,  $090 ; MEOWTH
-	mon_cry CRY_CLEFAIRY,    $099,  $17f ; PERSIAN
-	mon_cry CRY_PSYDUCK,     $020,  $0e0 ; PSYDUCK
-	mon_cry CRY_PSYDUCK,     $0ff,  $0c0 ; GOLDUCK
-	mon_cry CRY_NIDOQUEEN,   $0dd,  $0e0 ; MANKEY
-	mon_cry CRY_NIDOQUEEN,   $0af,  $0c0 ; PRIMEAPE
-	mon_cry CRY_GROWLITHE,   $020,  $0c0 ; GROWLITHE
-	mon_cry CRY_WEEDLE,      $000,  $100 ; ARCANINE
-	mon_cry CRY_PIDGEY,      $0ff,  $17f ; POLIWAG
-	mon_cry CRY_PIDGEY,      $077,  $0e0 ; POLIWHIRL
-	mon_cry CRY_PIDGEY,      $000,  $17f ; POLIWRATH
-	mon_cry CRY_METAPOD,     $0c0,  $081 ; ABRA
-	mon_cry CRY_METAPOD,     $0a8,  $140 ; KADABRA
-	mon_cry CRY_METAPOD,     $098,  $17f ; ALAKAZAM
-	mon_cry CRY_GROWLITHE,   $0ee,  $081 ; MACHOP
-	mon_cry CRY_GROWLITHE,   $048,  $0e0 ; MACHOKE
-	mon_cry CRY_GROWLITHE,   $008,  $140 ; MACHAMP
-	mon_cry CRY_PSYDUCK,     $055,  $081 ; BELLSPROUT
-	mon_cry CRY_WEEPINBELL,  $044,  $0a0 ; WEEPINBELL
-	mon_cry CRY_WEEPINBELL,  $066,  $14c ; VICTREEBEL
-	mon_cry CRY_VENONAT,     $000,  $100 ; TENTACOOL
-	mon_cry CRY_VENONAT,     $0ee,  $17f ; TENTACRUEL
-	mon_cry CRY_VULPIX,      $0f0,  $090 ; GEODUDE
-	mon_cry CRY_VULPIX,      $000,  $100 ; GRAVELER
-	mon_cry CRY_GOLEM,       $0e0,  $0c0 ; GOLEM
-	mon_cry CRY_WEEPINBELL,  $000,  $100 ; PONYTA
-	mon_cry CRY_WEEPINBELL,  $020,  $140 ; RAPIDASH
-	mon_cry CRY_SLOWPOKE,    $000,  $100 ; SLOWPOKE
-	mon_cry CRY_GROWLITHE,   $000,  $100 ; SLOWBRO
-	mon_cry CRY_METAPOD,     $080,  $0e0 ; MAGNEMITE
-	mon_cry CRY_METAPOD,     $020,  $140 ; MAGNETON
-	mon_cry CRY_SPEAROW,     $0dd,  $081 ; FARFETCH_D
-	mon_cry CRY_DIGLETT,     $0bb,  $081 ; DODUO
-	mon_cry CRY_DIGLETT,     $099,  $0a0 ; DODRIO
-	mon_cry CRY_SEEL,        $088,  $140 ; SEEL
-	mon_cry CRY_SEEL,        $023,  $17f ; DEWGONG
-	mon_cry CRY_GRIMER,      $000,  $100 ; GRIMER
-	mon_cry CRY_MUK,         $0ef,  $17f ; MUK
-	mon_cry CRY_FEAROW,      $000,  $100 ; SHELLDER
-	mon_cry CRY_FEAROW,      $06f,  $160 ; CLOYSTER
-	mon_cry CRY_METAPOD,     $000,  $100 ; GASTLY
-	mon_cry CRY_METAPOD,     $030,  $0c0 ; HAUNTER
-	mon_cry CRY_MUK,         $000,  $17f ; GENGAR
-	mon_cry CRY_EKANS,       $0ff,  $140 ; ONIX
-	mon_cry CRY_DROWZEE,     $088,  $0a0 ; DROWZEE
-	mon_cry CRY_DROWZEE,     $0ee,  $0c0 ; HYPNO
-	mon_cry CRY_KRABBY,      $020,  $160 ; KRABBY
-	mon_cry CRY_KRABBY,      $0ee,  $160 ; KINGLER
-	mon_cry CRY_VOLTORB,     $0ed,  $100 ; VOLTORB
-	mon_cry CRY_VOLTORB,     $0a8,  $110 ; ELECTRODE
-	mon_cry CRY_DIGLETT,     $000,  $100 ; EXEGGCUTE
-	mon_cry CRY_DROWZEE,     $000,  $100 ; EXEGGUTOR
-	mon_cry CRY_CLEFAIRY,    $000,  $100 ; CUBONE
-	mon_cry CRY_ODDISH,      $04f,  $0e0 ; MAROWAK
-	mon_cry CRY_GOLEM,       $080,  $140 ; HITMONLEE
-	mon_cry CRY_SEEL,        $0ee,  $140 ; HITMONCHAN
-	mon_cry CRY_SEEL,        $000,  $100 ; LICKITUNG
-	mon_cry CRY_GOLEM,       $0e6,  $15d ; KOFFING
-	mon_cry CRY_GOLEM,       $0ff,  $17f ; WEEZING
-	mon_cry CRY_CHARMANDER,  $000,  $100 ; RHYHORN
-	mon_cry CRY_RHYDON,      $000,  $100 ; RHYDON
-	mon_cry CRY_PIDGEOTTO,   $00a,  $140 ; CHANSEY
-	mon_cry CRY_GOLEM,       $000,  $100 ; TANGELA
-	mon_cry CRY_KANGASKHAN,  $000,  $100 ; KANGASKHAN
-	mon_cry CRY_CLEFAIRY,    $099,  $090 ; HORSEA
-	mon_cry CRY_CLEFAIRY,    $03c,  $081 ; SEADRA
-	mon_cry CRY_CATERPIE,    $080,  $0c0 ; GOLDEEN
-	mon_cry CRY_CATERPIE,    $010,  $17f ; SEAKING
-	mon_cry CRY_PARAS,       $002,  $0a0 ; STARYU
-	mon_cry CRY_PARAS,       $000,  $100 ; STARMIE
-	mon_cry CRY_KRABBY,      $008,  $0c0 ; MR__MIME
-	mon_cry CRY_CATERPIE,    $000,  $100 ; SCYTHER
-	mon_cry CRY_DROWZEE,     $0ff,  $17f ; JYNX
-	mon_cry CRY_VOLTORB,     $08f,  $17f ; ELECTABUZZ
-	mon_cry CRY_CHARMANDER,  $0ff,  $0b0 ; MAGMAR
-	mon_cry CRY_PIDGEOTTO,   $000,  $100 ; PINSIR
-	mon_cry CRY_SQUIRTLE,    $011,  $0c0 ; TAUROS
-	mon_cry CRY_EKANS,       $080,  $080 ; MAGIKARP
-	mon_cry CRY_EKANS,       $000,  $100 ; GYARADOS
-	mon_cry CRY_LAPRAS,      $000,  $100 ; LAPRAS
-	mon_cry CRY_PIDGEY,      $0ff,  $17f ; DITTO
-	mon_cry CRY_VENONAT,     $088,  $0e0 ; EEVEE
-	mon_cry CRY_VENONAT,     $0aa,  $17f ; VAPOREON
-	mon_cry CRY_VENONAT,     $03d,  $100 ; JOLTEON
-	mon_cry CRY_VENONAT,     $010,  $0a0 ; FLAREON
-	mon_cry CRY_WEEPINBELL,  $0aa,  $17f ; PORYGON
-	mon_cry CRY_GROWLITHE,   $0f0,  $081 ; OMANYTE
-	mon_cry CRY_GROWLITHE,   $0ff,  $0c0 ; OMASTAR
-	mon_cry CRY_CATERPIE,    $0bb,  $0c0 ; KABUTO
-	mon_cry CRY_FEAROW,      $0ee,  $081 ; KABUTOPS
-	mon_cry CRY_VILEPLUME,   $020,  $170 ; AERODACTYL
-	mon_cry CRY_GRIMER,      $055,  $081 ; SNORLAX
-	mon_cry CRY_RAICHU,      $080,  $0c0 ; ARTICUNO
-	mon_cry CRY_FEAROW,      $0ff,  $100 ; ZAPDOS
-	mon_cry CRY_RAICHU,      $0f8,  $0c0 ; MOLTRES
-	mon_cry CRY_BULBASAUR,   $060,  $0c0 ; DRATINI
-	mon_cry CRY_BULBASAUR,   $040,  $100 ; DRAGONAIR
-	mon_cry CRY_BULBASAUR,   $03c,  $140 ; DRAGONITE
-	mon_cry CRY_PARAS,       $099,  $17f ; MEWTWO
-	mon_cry CRY_PARAS,       $0ee,  $17f ; MEW
-	mon_cry CRY_CHIKORITA,   $020,  $0b0 ; CHIKORITA	;
-	mon_cry CRY_CHIKORITA,   $010,  $120 ; BAYLEEF		;
-	mon_cry CRY_CHIKORITA,   $000,  $17f ; MEGANIUM		;
-	mon_cry CRY_CYNDAQUIL,   $047,  $080 ; CYNDAQUIL	;
-	mon_cry CRY_CYNDAQUIL,   $021,  $120 ; QUILAVA		;
-	mon_cry CRY_TYPHLOSION,  $0c0,  $0d4 ; TYPHLOSION	;
-	mon_cry CRY_CHARMANDER,  $0f0,  $0d4 ; TOTODILE		;
-	mon_cry CRY_CHARMANDER,  $0e0,  $0f4 ; CROCONAW		;
-	mon_cry CRY_CHARMANDER,  $0b1,  $134 ; FERALIGATR	;
-	mon_cry CRY_SENTRET,     $08a,  $0b8 ; SENTRET		;
-	mon_cry CRY_SENTRET,     $06b,  $102 ; FURRET		;
-	mon_cry CRY_HOOTHOOT,    $091,  $0d8 ; HOOTHOOT		;
-	mon_cry CRY_HOOTHOOT,    $000,  $17f ; NOCTOWL		;
-	mon_cry CRY_LEDYBA,      $008,  $0de ; LEDYBA		;
-	mon_cry CRY_LEDYBA,      $000,  $138 ; LEDIAN		;
-	mon_cry CRY_SPINARAK,    $011,  $17f ; SPINARAK		;
-	mon_cry CRY_SPINARAK,    $000,  $171 ; ARIADOS		;
-	mon_cry CRY_SQUIRTLE,    $000,  $140 ; CROBAT		;
-	mon_cry CRY_CYNDAQUIL,   $0c9,  $140 ; CHINCHOU		;
-	mon_cry CRY_CYNDAQUIL,   $018,  $110 ; LANTURN		;
-	mon_cry CRY_PICHU,       $000,  $122 ; PICHU		;
-	mon_cry CRY_CLEFFA,      $061,  $0ba ; CLEFFA		;
-	mon_cry CRY_CHIKORITA,   $030,  $0e8 ; IGGLYBUFF	;
-	mon_cry CRY_TOGEPI,      $010,  $100 ; TOGEPI		;
-	mon_cry CRY_TOGETIC,     $000,  $080 ; TOGETIC		;
-	mon_cry CRY_NATU,        $040,  $100 ; NATU		;
-	mon_cry CRY_NATU,        $000,  $168 ; XATU		;
-	mon_cry CRY_MAREEP,      $022,  $0d8 ; MAREEP		;
-	mon_cry CRY_MAREEP,      $000,  $17f ; FLAAFFY		;
-	mon_cry CRY_FEAROW,      $010,  $11f ; AMPHAROS		;
-	mon_cry CRY_CLEFFA,      $084,  $133 ; BELLOSSOM	;
-	mon_cry CRY_MARILL,      $0f0,  $120 ; MARILL		;
-	mon_cry CRY_MARILL,      $0b6,  $17f ; AZUMARILL	;
-	mon_cry CRY_CLEFFA,      $010,  $151 ; SUDOWOODO	;
-	mon_cry CRY_EKANS,       $040,  $11f ; POLITOED		;
-	mon_cry CRY_CLEFFA,      $03b,  $0dc ; HOPPIP		;
-	mon_cry CRY_CLEFFA,      $027,  $124 ; SKIPLOOM		;
-	mon_cry CRY_CLEFFA,      $000,  $151 ; JUMPLUFF		;
-	mon_cry CRY_AIPOM,       $010,  $0e8 ; AIPOM		;
-	mon_cry CRY_MARILL,      $0ff,  $0b8 ; SUNKERN		;
-	mon_cry CRY_SUNFLORA,    $0d2,  $17f ; SUNFLORA		;
-	mon_cry CRY_TOTODILE,    $031,  $0c8 ; YANMA		;
-	mon_cry CRY_WOOPER,      $093,  $0af ; WOOPER		;
-	mon_cry CRY_WOOPER,      $000,  $140 ; QUAGSIRE		;
-	mon_cry CRY_AIPOM,       $0a2,  $140 ; ESPEON		;
-	mon_cry CRY_BLASTOISE,   $09c,  $0cd ; UMBREON		;
-	mon_cry CRY_MARILL,      $000,  $17f ; MURKROW		;
-	mon_cry CRY_SLOWKING,    $0ff,  $17f ; SLOWKING		;
-	mon_cry CRY_HOOTHOOT,    $0cf,  $0e8 ; MISDREAVUS	;
-	mon_cry CRY_HOOTHOOT,    $0ff,  $100 ; UNOWN		;
-	mon_cry CRY_AMPHAROS,    $05f,  $144 ; WOBBUFFET	;
-	mon_cry CRY_GIRAFARIG,   $041,  $166 ; GIRAFARIG	;
-	mon_cry CRY_SLOWKING,    $080,  $100 ; PINECO		;
-	mon_cry CRY_SLOWKING,    $000,  $17f ; FORRETRESS	;
-	mon_cry CRY_DUNSPARCE,   $0b0,  $100 ; DUNSPARCE	;
-	mon_cry CRY_GLIGAR,      $0fe,  $100 ; GLIGAR		;
-	mon_cry CRY_TYPHLOSION,  $0ef,  $0f7 ; STEELIX		;
-	mon_cry CRY_DUNSPARCE,   $06b,  $0e8 ; SNUBBULL		;
-	mon_cry CRY_DUNSPARCE,   $000,  $17f ; GRANBULL		;
-	mon_cry CRY_SLOWKING,    $060,  $0e0 ; QWILFISH		;
-	mon_cry CRY_AMPHAROS,    $000,  $160 ; SCIZOR		;
-	mon_cry CRY_DUNSPARCE,   $0ff,  $0a8 ; SHUCKLE		;
-	mon_cry CRY_AMPHAROS,    $035,  $0e0 ; HERACROSS	;
-	mon_cry CRY_WOOPER,      $053,  $0af ; SNEASEL		;
-	mon_cry CRY_TEDDIURSA,   $000,  $080 ; TEDDIURSA	;
-	mon_cry CRY_TEDDIURSA,   $0ff,  $0d8 ; URSARING		;
-	mon_cry CRY_EKANS,       $0df,  $140 ; SLUGMA		;
-	mon_cry CRY_PSYDUCK,     $05f,  $11f ; MAGCARGO		;
-	mon_cry CRY_CYNDAQUIL,   $000,  $140 ; SWINUB		;
-	mon_cry CRY_GRIMER,      $0c0,  $0e0 ; PILOSWINE	;
-	mon_cry CRY_MAGCARGO,    $0a1,  $0e8 ; CORSOLA		;
-	mon_cry CRY_SUNFLORA,    $0ff,  $100 ; REMORAID		;
-	mon_cry CRY_TOTODILE,    $000,  $17f ; OCTILLERY	;
-	mon_cry CRY_TEDDIURSA,   $008,  $080 ; DELIBIRD		;
-	mon_cry CRY_MANTINE,     $000,  $0f0 ; MANTINE		;
-	mon_cry CRY_AMPHAROS,    $0a9,  $17f ; SKARMORY		;
-	mon_cry CRY_CYNDAQUIL,   $0ff,  $140 ; HOUNDOUR		;
-	mon_cry CRY_TOTODILE,    $00a,  $100 ; HOUNDOOM		;
-	mon_cry CRY_SLUGMA,      $0ff,  $100 ; KINGDRA		;
-	mon_cry CRY_SENTRET,     $048,  $180 ; PHANPY		;
-	mon_cry CRY_DONPHAN,     $000,  $17f ; DONPHAN		;
-	mon_cry CRY_GIRAFARIG,   $073,  $167 ; PORYGON2		;
-	mon_cry CRY_EKANS,       $0f4,  $17f ; STANTLER		;
-	mon_cry CRY_SLOWPOKE,    $020,  $17f ; SMEARGLE		;
-	mon_cry CRY_AIPOM,       $02c,  $108 ; TYROGUE		;
-	mon_cry CRY_SLUGMA,      $000,  $100 ; HITMONTOP	;
-	mon_cry CRY_MARILL,      $068,  $100 ; SMOOCHUM		;
-	mon_cry CRY_SUNFLORA,    $000,  $0b4 ; ELEKID		;
-	mon_cry CRY_TEDDIURSA,   $020,  $080 ; MAGBY		;
-	mon_cry CRY_GLIGAR,      $033,  $17f ; MILTANK		;
-	mon_cry CRY_MARILL,      $080,  $17f ; BLISSEY		;
-	mon_cry CRY_ENTEI,       $0a4,  $0df ; RAIKOU		;
-	mon_cry CRY_ENTEI,       $000,  $17f ; ENTEI		;
-	mon_cry CRY_MAGCARGO,    $000,  $17f ; SUICUNE		;
-	mon_cry CRY_RAIKOU,      $05f,  $0d0 ; LARVITAR		;
-	mon_cry CRY_SPINARAK,    $0ff,  $128 ; PUPITAR		;
-	mon_cry CRY_RAIKOU,      $000,  $17f ; TYRANITAR	;
-	mon_cry CRY_TYPHLOSION,  $000,  $100 ; LUGIA		;
-	mon_cry CRY_AIPOM,       $000,  $17f ; HO_OH		;
-	mon_cry CRY_ENTEI,       $0ff,  $111 ; CELEBI		;
-	mon_cry CRY_NIDORAN_M,   $080,  $080
-	mon_cry CRY_NIDORAN_M,   $080,  $080
-	mon_cry CRY_NIDORAN_M,   $080,  $080
-	mon_cry CRY_NIDORAN_M,   $080,  $080
-	mon_cry CRY_NIDORAN_M,   $080,  $080
+	mon_cry CRY_BULBASAUR,   $80,  $81 ; BULBASAUR
+	mon_cry CRY_BULBASAUR,   $20,  $00 ; IVYSAUR
+	mon_cry CRY_BULBASAUR,   $00,  $40 ; VENUSAUR
+	mon_cry CRY_CHARMANDER,  $60,  $c0 ; CHARMANDER
+	mon_cry CRY_CHARMANDER,  $20,  $c0 ; CHARMELEON
+	mon_cry CRY_CHARMANDER,  $00,  $00 ; CHARIZARD
+	mon_cry CRY_SQUIRTLE,    $60,  $c0 ; SQUIRTLE
+	mon_cry CRY_SQUIRTLE,    $20,  $c0 ; WARTORTLE
+	mon_cry CRY_BLASTOISE,   $00,  $00 ; BLASTOISE
+	mon_cry CRY_CATERPIE,    $80,  $a0 ; CATERPIE
+	mon_cry CRY_METAPOD,     $cc,  $81 ; METAPOD
+	mon_cry CRY_CATERPIE,    $77,  $c0 ; BUTTERFREE
+	mon_cry CRY_WEEDLE,      $ee,  $81 ; WEEDLE
+	mon_cry CRY_BLASTOISE,   $ff,  $81 ; KAKUNA
+	mon_cry CRY_BLASTOISE,   $60,  $00 ; BEEDRILL
+	mon_cry CRY_PIDGEY,      $df,  $84 ; PIDGEY
+	mon_cry CRY_PIDGEOTTO,   $28,  $40 ; PIDGEOTTO
+	mon_cry CRY_PIDGEOTTO,   $11,  $7f ; PIDGEOT
+	mon_cry CRY_RATTATA,     $00,  $00 ; RATTATA
+	mon_cry CRY_RATTATA,     $20,  $7f ; RATICATE
+	mon_cry CRY_SPEAROW,     $00,  $00 ; SPEAROW
+	mon_cry CRY_FEAROW,      $40,  $20 ; FEAROW
+	mon_cry CRY_EKANS,       $12,  $c0 ; EKANS
+	mon_cry CRY_EKANS,       $e0,  $90 ; ARBOK
+	mon_cry CRY_BULBASAUR,   $ee,  $81 ; PIKACHU
+	mon_cry CRY_RAICHU,      $ee,  $88 ; RAICHU
+	mon_cry CRY_NIDORAN_M,   $20,  $c0 ; SANDSHREW
+	mon_cry CRY_NIDORAN_M,   $ff,  $7f ; SANDSLASH
+	mon_cry CRY_NIDORAN_F,   $00,  $00 ; NIDORAN_F
+	mon_cry CRY_NIDORAN_F,   $2c,  $60 ; NIDORINA
+	mon_cry CRY_NIDOQUEEN,   $00,  $00 ; NIDOQUEEN
+	mon_cry CRY_NIDORAN_M,   $00,  $00 ; NIDORAN_M
+	mon_cry CRY_NIDORAN_M,   $2c,  $40 ; NIDORINO
+	mon_cry CRY_RAICHU,      $00,  $00 ; NIDOKING
+	mon_cry CRY_CLEFAIRY,    $cc,  $81 ; CLEFAIRY
+	mon_cry CRY_CLEFAIRY,    $aa,  $a0 ; CLEFABLE
+	mon_cry CRY_VULPIX,      $4f,  $90 ; VULPIX
+	mon_cry CRY_VULPIX,      $88,  $e0 ; NINETALES
+	mon_cry CRY_PIDGEY,      $ff,  $b5 ; JIGGLYPUFF
+	mon_cry CRY_PIDGEY,      $68,  $e0 ; WIGGLYTUFF
+	mon_cry CRY_SQUIRTLE,    $e0,  $00 ; ZUBAT
+	mon_cry CRY_SQUIRTLE,    $fa,  $00 ; GOLBAT
+	mon_cry CRY_ODDISH,      $dd,  $81 ; ODDISH
+	mon_cry CRY_ODDISH,      $aa,  $c0 ; GLOOM
+	mon_cry CRY_VILEPLUME,   $22,  $7f ; VILEPLUME
+	mon_cry CRY_PARAS,       $20,  $60 ; PARAS
+	mon_cry CRY_PARAS,       $42,  $7f ; PARASECT
+	mon_cry CRY_VENONAT,     $44,  $c0 ; VENONAT
+	mon_cry CRY_VENONAT,     $29,  $00 ; VENOMOTH
+	mon_cry CRY_DIGLETT,     $aa,  $81 ; DIGLETT
+	mon_cry CRY_DIGLETT,     $2a,  $90 ; DUGTRIO
+	mon_cry CRY_CLEFAIRY,    $77,  $90 ; MEOWTH
+	mon_cry CRY_CLEFAIRY,    $99,  $7f ; PERSIAN
+	mon_cry CRY_PSYDUCK,     $20,  $e0 ; PSYDUCK
+	mon_cry CRY_PSYDUCK,     $ff,  $c0 ; GOLDUCK
+	mon_cry CRY_NIDOQUEEN,   $dd,  $e0 ; MANKEY
+	mon_cry CRY_NIDOQUEEN,   $af,  $c0 ; PRIMEAPE
+	mon_cry CRY_GROWLITHE,   $20,  $c0 ; GROWLITHE
+	mon_cry CRY_WEEDLE,      $00,  $00 ; ARCANINE
+	mon_cry CRY_PIDGEY,      $ff,  $7f ; POLIWAG
+	mon_cry CRY_PIDGEY,      $77,  $e0 ; POLIWHIRL
+	mon_cry CRY_PIDGEY,      $00,  $7f ; POLIWRATH
+	mon_cry CRY_METAPOD,     $c0,  $81 ; ABRA
+	mon_cry CRY_METAPOD,     $a8,  $40 ; KADABRA
+	mon_cry CRY_METAPOD,     $98,  $7f ; ALAKAZAM
+	mon_cry CRY_GROWLITHE,   $ee,  $81 ; MACHOP
+	mon_cry CRY_GROWLITHE,   $48,  $e0 ; MACHOKE
+	mon_cry CRY_GROWLITHE,   $08,  $40 ; MACHAMP
+	mon_cry CRY_PSYDUCK,     $55,  $81 ; BELLSPROUT
+	mon_cry CRY_WEEPINBELL,  $44,  $a0 ; WEEPINBELL
+	mon_cry CRY_WEEPINBELL,  $66,  $4c ; VICTREEBEL
+	mon_cry CRY_VENONAT,     $00,  $00 ; TENTACOOL
+	mon_cry CRY_VENONAT,     $ee,  $7f ; TENTACRUEL
+	mon_cry CRY_VULPIX,      $f0,  $90 ; GEODUDE
+	mon_cry CRY_VULPIX,      $00,  $00 ; GRAVELER
+	mon_cry CRY_GOLEM,       $e0,  $c0 ; GOLEM
+	mon_cry CRY_WEEPINBELL,  $00,  $00 ; PONYTA
+	mon_cry CRY_WEEPINBELL,  $20,  $40 ; RAPIDASH
+	mon_cry CRY_SLOWPOKE,    $00,  $00 ; SLOWPOKE
+	mon_cry CRY_GROWLITHE,   $00,  $00 ; SLOWBRO
+	mon_cry CRY_METAPOD,     $80,  $e0 ; MAGNEMITE
+	mon_cry CRY_METAPOD,     $20,  $40 ; MAGNETON
+	mon_cry CRY_SPEAROW,     $dd,  $81 ; FARFETCH_D
+	mon_cry CRY_DIGLETT,     $bb,  $81 ; DODUO
+	mon_cry CRY_DIGLETT,     $99,  $a0 ; DODRIO
+	mon_cry CRY_SEEL,        $88,  $40 ; SEEL
+	mon_cry CRY_SEEL,        $23,  $7f ; DEWGONG
+	mon_cry CRY_GRIMER,      $00,  $00 ; GRIMER
+	mon_cry CRY_MUK,         $ef,  $7f ; MUK
+	mon_cry CRY_FEAROW,      $00,  $00 ; SHELLDER
+	mon_cry CRY_FEAROW,      $6f,  $60 ; CLOYSTER
+	mon_cry CRY_METAPOD,     $00,  $00 ; GASTLY
+	mon_cry CRY_METAPOD,     $30,  $c0 ; HAUNTER
+	mon_cry CRY_MUK,         $00,  $7f ; GENGAR
+	mon_cry CRY_EKANS,       $ff,  $40 ; ONIX
+	mon_cry CRY_DROWZEE,     $88,  $a0 ; DROWZEE
+	mon_cry CRY_DROWZEE,     $ee,  $c0 ; HYPNO
+	mon_cry CRY_KRABBY,      $20,  $60 ; KRABBY
+	mon_cry CRY_KRABBY,      $ee,  $60 ; KINGLER
+	mon_cry CRY_VOLTORB,     $ed,  $00 ; VOLTORB
+	mon_cry CRY_VOLTORB,     $a8,  $10 ; ELECTRODE
+	mon_cry CRY_DIGLETT,     $00,  $00 ; EXEGGCUTE
+	mon_cry CRY_DROWZEE,     $00,  $00 ; EXEGGUTOR
+	mon_cry CRY_CLEFAIRY,    $00,  $00 ; CUBONE
+	mon_cry CRY_ODDISH,      $4f,  $e0 ; MAROWAK
+	mon_cry CRY_GOLEM,       $80,  $40 ; HITMONLEE
+	mon_cry CRY_SEEL,        $ee,  $40 ; HITMONCHAN
+	mon_cry CRY_SEEL,        $00,  $00 ; LICKITUNG
+	mon_cry CRY_GOLEM,       $e6,  $5d ; KOFFING
+	mon_cry CRY_GOLEM,       $ff,  $7f ; WEEZING
+	mon_cry CRY_CHARMANDER,  $00,  $00 ; RHYHORN
+	mon_cry CRY_RHYDON,      $00,  $00 ; RHYDON
+	mon_cry CRY_PIDGEOTTO,   $0a,  $40 ; CHANSEY
+	mon_cry CRY_GOLEM,       $00,  $00 ; TANGELA
+	mon_cry CRY_KANGASKHAN,  $00,  $00 ; KANGASKHAN
+	mon_cry CRY_CLEFAIRY,    $99,  $90 ; HORSEA
+	mon_cry CRY_CLEFAIRY,    $3c,  $81 ; SEADRA
+	mon_cry CRY_CATERPIE,    $80,  $c0 ; GOLDEEN
+	mon_cry CRY_CATERPIE,    $10,  $7f ; SEAKING
+	mon_cry CRY_PARAS,       $02,  $a0 ; STARYU
+	mon_cry CRY_PARAS,       $00,  $00 ; STARMIE
+	mon_cry CRY_KRABBY,      $08,  $c0 ; MR__MIME
+	mon_cry CRY_CATERPIE,    $00,  $00 ; SCYTHER
+	mon_cry CRY_DROWZEE,     $ff,  $7f ; JYNX
+	mon_cry CRY_VOLTORB,     $8f,  $7f ; ELECTABUZZ
+	mon_cry CRY_CHARMANDER,  $ff,  $b0 ; MAGMAR
+	mon_cry CRY_PIDGEOTTO,   $00,  $00 ; PINSIR
+	mon_cry CRY_SQUIRTLE,    $11,  $c0 ; TAUROS
+	mon_cry CRY_EKANS,       $80,  $80 ; MAGIKARP
+	mon_cry CRY_EKANS,       $00,  $00 ; GYARADOS
+	mon_cry CRY_LAPRAS,      $00,  $00 ; LAPRAS
+	mon_cry CRY_PIDGEY,      $ff,  $7f ; DITTO
+	mon_cry CRY_VENONAT,     $88,  $e0 ; EEVEE
+	mon_cry CRY_VENONAT,     $aa,  $7f ; VAPOREON
+	mon_cry CRY_VENONAT,     $3d,  $00 ; JOLTEON
+	mon_cry CRY_VENONAT,     $10,  $a0 ; FLAREON
+	mon_cry CRY_WEEPINBELL,  $aa,  $7f ; PORYGON
+	mon_cry CRY_GROWLITHE,   $f0,  $81 ; OMANYTE
+	mon_cry CRY_GROWLITHE,   $ff,  $c0 ; OMASTAR
+	mon_cry CRY_CATERPIE,    $bb,  $c0 ; KABUTO
+	mon_cry CRY_FEAROW,      $ee,  $81 ; KABUTOPS
+	mon_cry CRY_VILEPLUME,   $20,  $70 ; AERODACTYL
+	mon_cry CRY_GRIMER,      $55,  $81 ; SNORLAX
+	mon_cry CRY_RAICHU,      $80,  $c0 ; ARTICUNO
+	mon_cry CRY_FEAROW,      $ff,  $00 ; ZAPDOS
+	mon_cry CRY_RAICHU,      $f8,  $c0 ; MOLTRES
+	mon_cry CRY_BULBASAUR,   $60,  $c0 ; DRATINI
+	mon_cry CRY_BULBASAUR,   $40,  $00 ; DRAGONAIR
+	mon_cry CRY_BULBASAUR,   $3c,  $40 ; DRAGONITE
+	mon_cry CRY_PARAS,       $99,  $7f ; MEWTWO
+	mon_cry CRY_PARAS,       $ee,  $7f ; MEW
+
+	mon_cry CRY_CHIKORITA,   $20,  $b0 ; CHIKORITA
+	mon_cry CRY_CHIKORITA,   $10,  $20 ; BAYLEEF
+	mon_cry CRY_CHIKORITA,   $00,  $7f ; MEGANIUM
+	mon_cry CRY_CYNDAQUIL,   $47,  $80 ; CYNDAQUIL
+	mon_cry CRY_CYNDAQUIL,   $21,  $20 ; QUILAVA
+	mon_cry CRY_TYPHLOSION,  $c0,  $d4 ; TYPHLOSION
+	mon_cry CRY_CHARMANDER,  $f0,  $d4 ; TOTODILE
+	mon_cry CRY_CHARMANDER,  $e0,  $f4 ; CROCONAW
+	mon_cry CRY_CHARMANDER,  $b1,  $34 ; FERALIGATR
+	mon_cry CRY_SENTRET,     $8a,  $b8 ; SENTRET
+	mon_cry CRY_SENTRET,     $6b,  $02 ; FURRET
+	mon_cry CRY_HOOTHOOT,    $91,  $d8 ; HOOTHOOT
+	mon_cry CRY_HOOTHOOT,    $00,  $7f ; NOCTOWL
+	mon_cry CRY_LEDYBA,      $08,  $de ; LEDYBA
+	mon_cry CRY_LEDYBA,      $00,  $38 ; LEDIAN
+	mon_cry CRY_SPINARAK,    $11,  $7f ; SPINARAK
+	mon_cry CRY_SPINARAK,    $00,  $71 ; ARIADOS
+	mon_cry CRY_SQUIRTLE,    $00,  $40 ; CROBAT
+	mon_cry CRY_CYNDAQUIL,   $c9,  $40 ; CHINCHOU
+	mon_cry CRY_CYNDAQUIL,   $18,  $10 ; LANTURN
+	mon_cry CRY_PICHU,       $00,  $22 ; PICHU
+	mon_cry CRY_CLEFFA,      $61,  $ba ; CLEFFA
+	mon_cry CRY_CHIKORITA,   $30,  $e8 ; IGGLYBUFF
+	mon_cry CRY_TOGEPI,      $10,  $00 ; TOGEPI
+	mon_cry CRY_TOGETIC,     $00,  $80 ; TOGETIC
+	mon_cry CRY_NATU,        $40,  $00 ; NATU
+	mon_cry CRY_NATU,        $00,  $68 ; XATU
+	mon_cry CRY_MAREEP,      $22,  $d8 ; MAREEP
+	mon_cry CRY_MAREEP,      $00,  $7f ; FLAAFFY
+	mon_cry CRY_FEAROW,      $10,  $1f ; AMPHAROS
+	mon_cry CRY_CLEFFA,      $84,  $33 ; BELLOSSOM
+	mon_cry CRY_MARILL,      $f0,  $20 ; MARILL
+	mon_cry CRY_MARILL,      $b6,  $7f ; AZUMARILL
+	mon_cry CRY_CLEFFA,      $10,  $51 ; SUDOWOODO
+	mon_cry CRY_EKANS,       $40,  $1f ; POLITOED
+	mon_cry CRY_CLEFFA,      $3b,  $dc ; HOPPIP
+	mon_cry CRY_CLEFFA,      $27,  $24 ; SKIPLOOM
+	mon_cry CRY_CLEFFA,      $00,  $51 ; JUMPLUFF
+	mon_cry CRY_AIPOM,       $10,  $e8 ; AIPOM
+	mon_cry CRY_MARILL,      $ff,  $b8 ; SUNKERN
+	mon_cry CRY_SUNFLORA,    $d2,  $7f ; SUNFLORA
+	mon_cry CRY_TOTODILE,    $31,  $c8 ; YANMA
+	mon_cry CRY_WOOPER,      $93,  $af ; WOOPER
+	mon_cry CRY_WOOPER,      $00,  $40 ; QUAGSIRE
+	mon_cry CRY_AIPOM,       $a2,  $40 ; ESPEON
+	mon_cry CRY_BLASTOISE,   $9c,  $cd ; UMBREON
+	mon_cry CRY_MARILL,      $00,  $7f ; MURKROW
+	mon_cry CRY_SLOWKING,    $ff,  $7f ; SLOWKING
+	mon_cry CRY_HOOTHOOT,    $cf,  $e8 ; MISDREAVUS
+	mon_cry CRY_HOOTHOOT,    $ff,  $00 ; UNOWN
+	mon_cry CRY_AMPHAROS,    $5f,  $44 ; WOBBUFFET
+	mon_cry CRY_GIRAFARIG,   $41,  $66 ; GIRAFARIG
+	mon_cry CRY_SLOWKING,    $80,  $00 ; PINECO
+	mon_cry CRY_SLOWKING,    $00,  $7f ; FORRETRESS
+	mon_cry CRY_DUNSPARCE,   $b0,  $00 ; DUNSPARCE
+	mon_cry CRY_GLIGAR,      $fe,  $00 ; GLIGAR
+	mon_cry CRY_TYPHLOSION,  $ef,  $f7 ; STEELIX
+	mon_cry CRY_DUNSPARCE,   $6b,  $e8 ; SNUBBULL
+	mon_cry CRY_DUNSPARCE,   $00,  $7f ; GRANBULL
+	mon_cry CRY_SLOWKING,    $60,  $e0 ; QWILFISH
+	mon_cry CRY_AMPHAROS,    $00,  $60 ; SCIZOR
+	mon_cry CRY_DUNSPARCE,   $ff,  $a8 ; SHUCKLE
+	mon_cry CRY_AMPHAROS,    $35,  $e0 ; HERACROSS
+	mon_cry CRY_WOOPER,      $53,  $af ; SNEASEL
+	mon_cry CRY_TEDDIURSA,   $00,  $80 ; TEDDIURSA
+	mon_cry CRY_TEDDIURSA,   $ff,  $d8 ; URSARING
+	mon_cry CRY_EKANS,       $df,  $40 ; SLUGMA
+	mon_cry CRY_PSYDUCK,     $5f,  $1f ; MAGCARGO
+	mon_cry CRY_CYNDAQUIL,   $00,  $40 ; SWINUB
+	mon_cry CRY_GRIMER,      $c0,  $e0 ; PILOSWINE
+	mon_cry CRY_MAGCARGO,    $a1,  $e8 ; CORSOLA
+	mon_cry CRY_SUNFLORA,    $ff,  $00 ; REMORAID
+	mon_cry CRY_TOTODILE,    $00,  $7f ; OCTILLERY
+	mon_cry CRY_TEDDIURSA,   $08,  $80 ; DELIBIRD
+	mon_cry CRY_MANTINE,     $00,  $f0 ; MANTINE
+	mon_cry CRY_AMPHAROS,    $a9,  $7f ; SKARMORY
+	mon_cry CRY_CYNDAQUIL,   $ff,  $40 ; HOUNDOUR
+	mon_cry CRY_TOTODILE,    $0a,  $00 ; HOUNDOOM
+	mon_cry CRY_SLUGMA,      $ff,  $00 ; KINGDRA
+	mon_cry CRY_SENTRET,     $48,  $80 ; PHANPY
+	mon_cry CRY_DONPHAN,     $00,  $7f ; DONPHAN
+	mon_cry CRY_GIRAFARIG,   $73,  $67 ; PORYGON2
+	mon_cry CRY_EKANS,       $f4,  $7f ; STANTLER
+	mon_cry CRY_SLOWPOKE,    $20,  $7f ; SMEARGLE
+	mon_cry CRY_AIPOM,       $2c,  $08 ; TYROGUE
+	mon_cry CRY_SLUGMA,      $00,  $00 ; HITMONTOP
+	mon_cry CRY_MARILL,      $68,  $00 ; SMOOCHUM
+	mon_cry CRY_SUNFLORA,    $00,  $b4 ; ELEKID
+	mon_cry CRY_TEDDIURSA,   $20,  $80 ; MAGBY
+	mon_cry CRY_GLIGAR,      $33,  $7f ; MILTANK
+	mon_cry CRY_MARILL,      $80,  $7f ; BLISSEY
+	mon_cry CRY_ENTEI,       $a4,  $df ; RAIKOU
+	mon_cry CRY_ENTEI,       $00,  $7f ; ENTEI
+	mon_cry CRY_MAGCARGO,    $00,  $7f ; SUICUNE
+	mon_cry CRY_RAIKOU,      $5f,  $d0 ; LARVITAR
+	mon_cry CRY_SPINARAK,    $ff,  $28 ; PUPITAR
+	mon_cry CRY_RAIKOU,      $00,  $7f ; TYRANITAR
+	mon_cry CRY_TYPHLOSION,  $00,  $00 ; LUGIA
+	mon_cry CRY_AIPOM,       $00,  $7f ; HO_OH
+	mon_cry CRY_ENTEI,       $ff,  $11 ; CELEBI
+	mon_cry CRY_NIDORAN_M,   $80,  $80
+	mon_cry CRY_NIDORAN_M,   $80,  $80
+	mon_cry CRY_NIDORAN_M,   $80,  $80
+	mon_cry CRY_NIDORAN_M,   $80,  $80
+	mon_cry CRY_NIDORAN_M,   $80,  $80

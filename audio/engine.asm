@@ -2094,8 +2094,7 @@ _PlayCry::
 	bc_offset CHANNEL_PITCH_OFFSET
 	ld a, [wCryPitch]
 	ld [hli], a
-	ld a, [wCryPitch + 1]
-	ld [hl], a
+	ld [hl], 0
 
 ; No tempo for channel 4
 	ld a, [wCurChannel]
@@ -2106,8 +2105,10 @@ _PlayCry::
 ; Tempo is effectively length
 	bc_offset CHANNEL_TEMPO
 	ld a, [wCryLength]
+	add $80
 	ld [hli], a
-	ld a, [wCryLength + 1]
+	ld a, 0
+	adc a
 	ld [hl], a
 .start
 	call StartChannel
@@ -2180,14 +2181,15 @@ _PlaySFX::
 	bc_offset CHANNEL_PITCH_OFFSET
 	ld a, [wSfxPitch]
 	ld [hli], a
-	ld a, [wSfxPitch + 1]
-	ld [hl], a
+	ld [hl], 0
 
 ; Tempo is effectively length
 	bc_offset CHANNEL_TEMPO
 	ld a, [wSfxLength]
+	add $80
 	ld [hli], a
-	ld a, [wSfxLength + 1]
+	ld a, 0
+	adc a
 	ld [hl], a
 .start
 	bc_offset CHANNEL_FLAGS1

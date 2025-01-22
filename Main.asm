@@ -171,7 +171,7 @@ InitCryEditor::
     rst     WaitVBlank
     xor     a
     ldh     [rLCDC],a
-    ld      a,17
+    ld      a,13
     ld      [sys_MenuMax],a
     xor     a
     ld      [sys_MenuPos],a
@@ -219,7 +219,7 @@ CryEditorLoop::
     jr      .continue
 .playSound
     ld      a,[sys_MenuPos]
-    cp      14
+    cp      10
     jr      c,.playSFX
     call    CryEdit_PlayMusic
     jr      .continue
@@ -234,12 +234,8 @@ CryEditorLoop::
     inc     hl
     ld      a,[hl+]
     ld      [wCryPitch],a
-    ld      a,[hl+]
-    ld      [wCryPitch+1],a
-    ld      a,[hl+]
+    ld      a,[hl]
     ld      [wCryLength],a
-    ld      a,[hl+]
-    ld      [wCryLength+1],a
     call    CryEd_PreviewCry
     jr      .continue
 .editUp
@@ -284,15 +280,11 @@ CryEditorLoop::
     call    DrawHex
     ld      a,[CryEdit_CryBase]
     call    DrawHex
-    ld      a,[CryEdit_CryPitch+1]
-    ld      hl,$986f
-    call    DrawHex
     ld      a,[CryEdit_CryPitch]
-    call    DrawHex
-    ld      a,[CryEdit_CryLength+1]
-    ld      hl,$98af
+    ld      hl,$9871
     call    DrawHex
     ld      a,[CryEdit_CryLength]
+    ld      hl,$98b1
     call    DrawHex
     ld      hl,$98f1
     ld      a,[CryEdit_SoundEffect]
@@ -313,22 +305,15 @@ CryEdit_Reset::
     ld      [hl+],a
     ld      [hl+],a
     ld      [hl+],a
-    ld      [hl+],a
-    ld      [hl+],a
-    inc     a
-    ld      [hl],a
+    ld      [hl],$80
     ret
 
 CryEdit_PlaySound::
     ld      hl,CryEdit_CryPitch
     ld      a,[hli]
     ld      [wSfxPitch],a
-    ld      a,[hli]
-    ld      [wSfxPitch+1],a
-    ld      a,[hli]
-    ld      [wSfxLength],a
     ld      a,[hl]
-    ld      [wSfxLength+1],a
+    ld      [wSfxLength],a
     ld      a,[CryEdit_SoundEffect]
     ld      e,a
     ld      d,0
@@ -425,8 +410,8 @@ CryEdit_EditNybble:
     
 CryEdit_CursorLocations:
     dw      $984f,$9850,$9851,$9852 ; base
-    dw      $988f,$9890,$9891,$9892 ; pitch
-    dw      $98cf,$98d0,$98d1,$98d2 ; length
+    dw      $9891,$9892             ; pitch
+    dw      $98d1,$98d2             ; length
     dw      $9911,$9912             ; length
     dw      $994f,$9950,$9951,$9952 ; length
     
@@ -435,12 +420,8 @@ CryEdit_NybbleLocations:
     dbw     0,CryEdit_CryBase+1
     dbw     1,CryEdit_CryBase
     dbw     0,CryEdit_CryBase
-    dbw     1,CryEdit_CryPitch+1
-    dbw     0,CryEdit_CryPitch+1
     dbw     1,CryEdit_CryPitch
     dbw     0,CryEdit_CryPitch
-    dbw     1,CryEdit_CryLength+1
-    dbw     0,CryEdit_CryLength+1
     dbw     1,CryEdit_CryLength
     dbw     0,CryEdit_CryLength
     dbw     1,CryEdit_SoundEffect
@@ -474,9 +455,9 @@ CryEditorTilemap::
     db  "                    "
     db  " Base:        $???? "
     db  "                    "
-    db  " Pitch:       $???? "
+    db  " Pitch:         $?? "
     db  "                    "
-    db  " Length:      $???? "
+    db  " Length:        $?? "
     db  "                    "
     db  " Sound Effect:  $?? "
     db  "                    "
@@ -791,11 +772,7 @@ LoadSaveScreenLoop:
     ld      a,[hl+]
     ld      [wCryPitch],a
     ld      a,[hl+]
-    ld      [wCryPitch+1],a
-    ld      a,[hl+]
     ld      [wCryLength],a
-    ld      a,[hl+]
-    ld      [wCryLength+1],a
     call    CryEd_PreviewCry
     jr  .continue
 .previewfail
@@ -857,19 +834,15 @@ LoadSaveScreenLoop:
     ld      [rRAMG],a
     push    hl
     call    LoadSave_CheckIfCryExists
-    jr      nc,.crydoesntexist
     pop     hl
+    jr      nc,.crydoesntexist
     ld      a,[hl+]
     ld      [CryEdit_CryBase],a
     inc     hl
     ld      a,[hl+]
     ld      [CryEdit_CryPitch],a
     ld      a,[hl+]
-    ld      [CryEdit_CryPitch+1],a
-    ld      a,[hl+]
     ld      [CryEdit_CryLength],a
-    ld      a,[hl]
-    ld      [CryEdit_CryLength+1],a
     xor     a
     ld      [rRAMG],a
     ld      de,SFX_TRANSACTION
@@ -1524,8 +1497,6 @@ CryImporterLoop::
     add     hl,de
     add     hl,de
     add     hl,de
-    add     hl,de
-    add     hl,de
     ld      a,[hl+]
     ld      [CryEdit_CryBase],a
     ld      a,[hl+]
@@ -1533,11 +1504,7 @@ CryImporterLoop::
     ld      a,[hl+]
     ld      [CryEdit_CryPitch],a
     ld      a,[hl+]
-    ld      [CryEdit_CryPitch+1],a
-    ld      a,[hl+]
     ld      [CryEdit_CryLength],a
-    ld      a,[hl]
-    ld      [CryEdit_CryLength+1],a
     ;bankchange back
 	pop af
 	ld [hROMBank], a
@@ -1548,10 +1515,57 @@ CryImporterLoop::
     call    PlaySFX
 .continue
     ld      a,[sys_ImportPos]
+    ld      d,a
     ld      hl,$986F
     call    DrawHex
     ld      a,[sys_ImportPos + 1]
+    ld      e,a
+    dec     de
     ld      hl,$9871
+    call    DrawHex
+    call    CopyCryData
+    ld      de,wCryDisplayData
+    ld      a,[hROMBank]
+    push    af
+    ld      a,BANK(BaseDesignations)
+    ld      [MBC3RomBank],a
+    ld      a,[de]
+    inc     de
+    push    bc
+    ld      l,a
+    ld      c,a
+    ld      a,[de]
+    push    de
+    ld      h,a
+    ld      b,a
+    add     hl,hl
+    add     hl,hl
+    add     hl,bc
+    add     hl,hl
+    ld      bc,BaseDesignations
+    add     hl,bc
+    ld      c,l
+    ld      b,h
+    ld      hl,$98E9
+    ld      de,10
+.baseloop
+    ld      a,[bc]
+    sub     $20
+    inc     bc
+    ld      [hli],a
+    dec     e
+    jr      nz,.baseloop
+    pop     de
+    pop     af
+    ld      [MBC3RomBank],a
+    pop     bc
+    inc     de
+    ld      a,[de]
+    inc     de
+    ld      hl,$9911
+    call    DrawHex
+    ld      a,[de]
+    ld      hl,$9931
     call    DrawHex
     ld      a,[sys_ImportPos]
     ld      h,a
@@ -1563,7 +1577,37 @@ CryImporterLoop::
     call    UpdateSound
     cease
     jp      CryImporterLoop
-    
+
+CopyCryData:
+	ld      a,[hROMBank]
+	push    af
+    ld      a,BANK(PokemonCries)
+    ld      [rROMB0],a
+	ld      [hROMBank],a
+    ld      hl,PokemonCries
+    add     hl,de
+    add     hl,de
+    add     hl,de
+    add     hl,de
+    ld      e,l
+    ld      d,h
+    ld      hl,wCryDisplayData
+    ld      a,[de]
+    inc     de
+    ld      [hli],a
+    ld      a,[de]
+    inc     de
+    ld      [hli],a
+    ld      a,[de]
+    inc     de
+    ld      [hli],a
+    ld      a,[de]
+    ld      [hl],a
+    pop     af
+    ld      [rROMB0],a
+	ld      [hROMBank],a
+    ret
+
 CryImporterTilemap::
 ;        ####################
     db  "                    "
@@ -1572,17 +1616,17 @@ CryImporterTilemap::
     db  " Cry ID:      $???? "
     db  " ??????????         "
     db  "                    "
+    db  "   - CRY VALUES -   "
+    db  " Base    ?????????? "
+    db  " Pitch          $?? "
+    db  " Legnth         $?? "
+    db  "                    "
     db  "    - CONTROLS -    "
     db  " Left/Right    +- 1 "
     db  " Up/Down      +- 16 "
     db  " A/Start     Import "
     db  " B             Exit "
     db  " Select     Preview "
-    db  "                    "
-    db  "                    "
-    db  "                    "
-    db  "                    "
-    db  "                    "
     db  "                    "
     db  "                    "
 

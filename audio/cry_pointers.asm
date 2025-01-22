@@ -70,11 +70,4 @@ Cries:
 	dba Cry_Dunsparce
 	dba Cry_Donphan
 	dba Cry_Unused
-;	dba Cry_Gastrodon
-;	dba Cry_Chatot
-;	dba Cry_Amaura
-;	dba Cry_Buneary
-;	dba Cry_Crabrawler
-;	dba Cry_Goomy
-;	dba Cry_Heliolisk
 	assert_table_length NUM_CRIES
