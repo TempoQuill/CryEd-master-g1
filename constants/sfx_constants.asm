@@ -96,14 +96,14 @@
 	const SFX_SING                        ; 5c
 	const SFX_HYPER_BEAM                  ; 5d
 	const SFX_SHINE                       ; 5e
-	const SFX_UNKNOWN_5F                  ; 5f
-	const SFX_UNKNOWN_60                  ; 60
-	const SFX_UNKNOWN_61                  ; 61
-	const SFX_SWITCH_POCKETS              ; 62
-	const SFX_UNKNOWN_63                  ; 63
-	const SFX_BURN                        ; 64
+	const SFX_PSYCHIC_UNUSED              ; 5f
+	const SFX_LUNGE                       ; 60
+	const SFX_NIDORAN_HIP                 ; 61
+	const SFX_NIDORAN_HOP                 ; 62
+	const SFX_GENGAR_HAND                 ; 63
+	const SFX_GENGAR_STRIKE               ; 64
 	const SFX_TITLE_SCREEN_ENTRANCE       ; 65
-	const SFX_UNKNOWN_66                  ; 66
+	const SFX_STOP_SLOT_RBY               ; 66
 	const SFX_GET_COIN_FROM_SLOTS         ; 67
 	const SFX_PAY_DAY                     ; 68
 	const SFX_METRONOME                   ; 69
@@ -128,7 +128,7 @@
 	const SFX_SWEET_KISS                  ; 7c
 	const SFX_SWEET_KISS_2                ; 7d
 	const SFX_BELLY_DRUM                  ; 7e
-	const SFX_UNKNOWN_7F                  ; 7f
+	const SFX_SLUDGE                      ; 7f
 	const SFX_SLUDGE_BOMB                 ; 80
 	const SFX_FORESIGHT                   ; 81
 	const SFX_SPITE                       ; 82
@@ -197,3 +197,6 @@
 	const SFX_RBY_WHOOSH                  ; c1
 	
 NUM_SFX EQU const_value
+
+SFX_SWITCH_POCKETS EQU SFX_NIDORAN_HOP
+SFX_BURN EQU SFX_GENGAR_STRIKE
